@@ -21,8 +21,6 @@ class DeleteHandler(base.BaseHandler):
 
 class ImageHandler(base.BaseHandler):
     def get(self, d, f):
-        print '*' * 50
-        print self.application.CP.get('picture', 'domain')
         ty = self.get_argument('ty', 'ori')
         img = Image.open('/'.join([self.application.CP.get('picture', 'domain'), d, f]))
 
@@ -87,7 +85,7 @@ class ImageHandler(base.BaseHandler):
         else:
             l = ori_y
             x = (ori_y - ori_x) / 2
-        print l, x, y
+
         try:
             p = Image.new('RGBA', (l, l), (255, 255, 255))
         except:

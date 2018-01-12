@@ -462,7 +462,6 @@ class design_project_pictures(ManageBaseHandler):
     @tornado.web.authenticated
     def post(self, id):
         pictures = self.get_argument('pictures', '')
-        print pictures
         if pictures:
             pictures = pictures.split(',')
         else:
@@ -470,7 +469,6 @@ class design_project_pictures(ManageBaseHandler):
 
         project = self.application.db.get('select * from designproject where id=%s', id)
         if project:
-            print pictures
             pics = str(pictures if pictures[0] else pictures[1:])
 
             sql = 'update designproject set pictures=%s where id=%s'
@@ -521,7 +519,6 @@ class events_detail(ManageBaseHandler):
             sql = '''insert into Events (ch_title,en_title,web_cover,wap_cover,ch_content,en_content,state) values(%s,%s,%s,'','','',0)'''
             params = [ch_title, en_title, web_cover]
         print sql, params
-        ret = self.application.db.execute(sql, *params)
         self.redirect('/manage/events')
 
 

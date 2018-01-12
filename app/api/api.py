@@ -25,7 +25,6 @@ class Events(tornado.web.RequestHandler):
 
 class Contact(tornado.web.RequestHandler):
     def post(self):
-        print 123
         source = self.get_argument('source', 'main')
         name = self.get_argument('name', '')
         subject = self.get_argument('subject', '')
