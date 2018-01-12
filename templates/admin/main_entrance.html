@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+
+
+{% block title %}首页文章入口{% end %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>首页文章入口</h1>
+</div>
+
+<div class="row gallery-row">
+    {% for p in entrance %}
+    <div class="col col-xs-12">
+
+        <div class="col col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="thumbnail">
+                <img class="img-rounded" src="{{ p.cover }}"/>
+            </div>
+        </div>
+        <div class="col col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <div class="caption">
+                <h4>
+                    {{ p.ch_title }}<br/>
+                    <small>{{ p.ch_url }}</small>
+                </h4>
+                <p>
+                    {{ p.ch_summary }}
+                </p>
+                <h4>
+                    {{ p.en_title }}<br/>
+                    <small>{{ p.en_url }}</small>
+                </h4>
+                <p>
+                    {{ p.en_summary }}
+                </p>
+            </div>
+            <div class="post-footer">
+                <a href="{{ reverse_url('manage_main_entrance_detail') }}?id={{ p.id }}">
+                    <span class="label label-info">基本信息</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col col-xs-12">
+        <hr/>
+    </div>
+    {% end %}
+</div>
+
+{% end %}

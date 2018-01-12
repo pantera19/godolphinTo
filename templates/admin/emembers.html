@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+
+
+{% block title %}报名列表{% end %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>报名列表</h1>
+    {% module Template("widget/return_back.html") %}
+</div>
+
+<div class="row gallery-row">
+    <table class="table table-striped">
+        <tr>
+            <th>姓名</th>
+            <th>手机号</th>
+            <th>邮箱</th>
+            <th>报名时间</th>
+        </tr>
+        {% for emember in emembers %}
+        <tr>
+            <td>
+                {{ emember.name }}
+            </td>
+            <td>{{ emember.phone }}
+            </td>
+            <td>{{ emember.email }}
+            </td>
+            <td>{{ emember.create_time }}
+            </td>
+        </tr>
+        {% end %}
+    </table>
+
+</div>
+{% if pagination %}
+<div class="pagination">
+    {{ macros.pagination_widget(pagination, 'manage.emembers') }}
+</div>
+{% end %}
+{% end %}

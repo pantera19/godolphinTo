@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+
+
+{% block title %}
+{{ ['关于','联系我们','D公司历程','D关于','D联系我们'][s] }}
+
+{% end %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>{{ ['关于','联系我们','D公司历程','D关于','D联系我们'][s] }}</h1>
+    <a href="{{ reverse_url('manage_appleother_detail') }}?s={{ s }}">
+        <h4>
+            <span class="label label-default">新增</span>
+        </h4>
+    </a>
+
+</div>
+
+<div class="row gallery-row">
+    {% for p in rows %}
+    <div class="col col-xs-12">
+
+        <div class="col col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="thumbnail">
+                <img class="img-rounded" src="{{ p.web_cover }}"/>
+            </div>
+            <div class="thumbnail">
+                <img class="img-rounded" src="{{ p.wap_cover }}"/>
+            </div>
+        </div>
+        <div class="col col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <div class="caption">
+                <h4>
+                    {{ p.ch_title }}<br/>
+                </h4>
+                <p>
+                    {% raw p.ch_content %}
+                </p>
+                <h4>
+                    {{ p.en_title }}<br/>
+                </h4>
+                <p>
+                    {% raw p.en_content %}
+                </p>
+            </div>
+            <div class="post-footer">
+                <a href="{{ reverse_url('manage_appleother_detail') }}?id={{ p.id }}">
+                    <span class="label label-info">基本信息</span>
+                </a>
+                <a href="{{ reverse_url('manage_appleother_sort',p.id,'up') }}">
+                    <span class="label label-primary">上移</span>
+                </a>
+                <a href="{{ reverse_url('manage_appleother_sort',p.id,'down') }}">
+                    <span class="label label-danger">下移</span>
+                </a>
+                <a href="{{ reverse_url('manage_appleother_state',p.id, 0)}}">
+                    <span class="label label-default">删除</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="col col-xs-12">
+        <hr/>
+    </div>
+    {% end %}
+</div>
+
+{% end %}

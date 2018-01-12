@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+
+
+{% block title %}新闻详情{% end %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>新闻详情</h1>
+    {% module Template("widget/return_back.html") %}
+</div>
+<div class="col-md-4">
+    <form action="{{ reverse_url('manage_design_news_detail') }}" class="form form-horizontal" method="post" role="form">
+        <input class="form-control" id="id" name="id" type="hidden" value="{{ news['id'] }}">
+
+        {% module Template("widget/text.html",title='中文标题',id='ch_title',value=news['ch_title']) %}
+        {% module Template("widget/text.html",title='中文作者',id='ch_author',value=news['ch_author']) %}
+        {% module Template("widget/text.html",title='英文标题',id='en_title',value=news['en_title']) %}
+        {% module Template("widget/text.html",title='英文作者',id='en_author',value=news['en_author']) %}
+
+        <div class="form-group ">
+            <input class="btn btn-default" id="submit" name="submit" type="submit" value="提交">
+        </div>
+    </form>
+
+
+</div>
+{% end %}
+
+{% block js %}
+
+{% end %}

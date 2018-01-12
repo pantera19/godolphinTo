@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block title %}编辑轮播图{% end %}
+
+{% block page_content %}
+
+<div class="page-header">
+    <h1>编辑轮播图</h1>
+    {% module Template("widget/return_back.html") %}
+</div>
+<div class="col-md-6">
+    <form action="{{ reverse_url('manage_main_carousel_detail') }}?id={{ slider.id }}" class="form form-horizontal" method="post"
+          role="form">
+        <input class="form-control" id="id" name="id" type="hidden" value="{{ slider.id }}">
+        {% module Template("widget/text.html",title='中文标题',id='ch_title',value=slider.ch_title) %}
+        {% module Template("widget/text.html",title='英文标题',id='en_title',value=slider.en_title) %}
+
+        {% module Template("widget/fileinput.html",title='PC端图片',id='web_cover',tips='图片宽高比要求为3:1，建议尺寸大于2400xp:800px,图片小于500kb',img=slider.web_cover,h=80,w=240,file_num=1) %}
+        {% module Template("widget/fileinput.html",title='手机端图片',id='wap_cover',tips='图片宽高比要求为2:1，建议尺寸小于800xp:400px,图片小于200kb',img=slider.wap_cover,h=120,w=240,file_num=1) %}
+
+        <div class="form-group ">
+            <input class="btn btn-default" id="submit" name="submit" type="submit" value="提交">
+        </div>
+    </form>
+
+
+</div>
+{% end %}
+
+{% block js %}
+
+{% end %}

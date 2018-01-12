@@ -1,0 +1,75 @@
+{# title,id, tips,img_list,h=160,w=240,file_num=1 #}
+
+<script type="text/javascript">
+    Array.prototype.remove = function(val) {
+        var index = this.indexOf(val);
+        if (index > -1) {
+            this.splice(index, 1);
+        }
+    };
+    $(document).ready(function () {
+        init_fi_{{id}}('upload_{{ id }}');
+    });
+
+    function init_fi_{{id}}(id) {
+        $("#" + id).fileinput({
+            language: 'zh',
+
+            uploadUrl: '/upload',
+            uploadAsync: true,
+            showRemove : true, //显示移除按钮
+            enctype: 'multipart/form-data',
+            showCaption: false,//是否显示标题
+            minFileCount: 1,
+            maxFileCount: '{{ file_num }}',
+            showUpload: true,
+            allowedFileExtensions: ['jpg', 'png', 'gif','jpeg'],
+            msgFilesTooMany: "选择上传的文件数量({n}) 超过允许的最大数值{m}！",
+            overwriteInitial: false,
+            initialPreviewAsData: false,
+            initialPreview: [
+                {% set leg = len(img_list)%}
+                {% for index,img in enumerate(img_list) %}
+                    {% if leg == index+1 %}
+                    "<img style='height:{{h}}px;width: {{w}}px;' src='{{ img }}'>"
+                    {% else %}
+                    "<img style='height:{{h}}px;width: {{w}}px;' src='{{ img }}'>",
+                    {% end %}
+                {% end %}
+            ],
+            initialPreviewConfig: [
+                {% set leg = len(img_list)%}
+                {% for index,img in enumerate(img_list) %}
+                    {% if leg == index+1 %}
+                    {key: '{{ img }}', showZoom: false, showDrag: false}
+                    {% else %}
+                    {key: '{{ img }}', showZoom: false, showDrag: false},
+                    {% end %}
+                {% end %}
+            ],
+            deleteUrl: "/api/delete_pic"
+        }).on("fileuploaded", function (event, data) {
+            $('#{{ id }}').val($('#{{ id }}').val()+','+data.response['imgsrc'])
+        }).on("filedeleted", function (event, data) {
+            var picArr = $('#{{ id }}').val().split(",");
+            picArr.remove(data);
+            $('#{{ id }}').val(picArr.join(','));
+        });
+
+    }
+
+    function get_pic() {
+        return $('#{{ id }}').val()
+
+    }
+</script>
+
+
+<div class="form-group">
+    <label class="control-label" for="{{ id }}">{{ title }}</label>
+    <input class="form-control" id="{{ id }}" name="{{ id }}" type="hidden" value="{{ ','.join(img_list) }}">
+    <input id="upload_{{ id }}" name="file" type="file" class="btn btn-info" multiple class="file-loading">
+</div>
+<div class="form-group">
+    {{tips}}
+</div>

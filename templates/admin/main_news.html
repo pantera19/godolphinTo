@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+
+
+{% block title %}新闻列表{% end %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>新闻列表</h1>
+    <a href="{{ reverse_url('manage_main_news_detail') }}">
+        <h4>
+            <span class="label label-default">新增新闻</span>
+        </h4>
+    </a>
+</div>
+
+<div class="row gallery-row">
+    {% for new in news %}
+    <div class="col col-xs-12">
+
+        <div class="caption">
+            <h4>
+               {{ new.ch_title }}<br/>
+                <small>{{ new.en_title }}</small>
+            </h4>
+            <p>
+                {{ new.create_time }}
+            </p>
+        </div>
+        <div class="post-footer">
+            <a href="{{ reverse_url('manage_main_news_detail') }}?id={{ new.id }}">
+                <span class="label label-info">基本信息</span>
+            </a>
+            <a href="{{ reverse_url('manage_main_news_content',new.id) }}?lang=cn">
+                <span class="label label-primary">中文正文</span>
+            </a>
+            <a href="{{ reverse_url('manage_main_news_content',new.id) }}?lang=en">
+                <span class="label label-danger">英文正文</span>
+            </a>
+            {% if new.state == 1 %}
+            <a href="{{ reverse_url('manage_main_news_state',new.id, 0)}}">
+                <span class="label label-warning">隐藏</span>
+            </a>
+            {% else %}
+            <a href="{{ reverse_url('manage_main_news_state',new.id, 1)}}">
+                <span class="label label-warning">显示</span>
+            </a>
+            {% end %}
+        </div>
+
+
+    </div>
+    {% end %}
+</div>
+{% if pagination %}
+<div class="pagination">
+    {{ macros.pagination_widget(pagination, 'manage_main_news') }}
+</div>
+{% end %}
+{% end %}

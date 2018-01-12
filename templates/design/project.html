@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}
+godolphin
+{% end %}
+
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{{ static_url('design/css/project.css') }}"/>
+{% end %}
+
+
+
+
+{% block content %}
+<div class="carousel-container">
+    <div class="slide-show" data-cycle-slides=">div" data-cycle-fx=carousel data-cycle-timeout=3000 data-cycle-auto-height=false data-starting-slide=0 data-cycle-speed=1000 data-cycle-carousel-fluid=true data-allow-wrap=true data-cycle-carousel-offset="0" data-cycle-easing="easeOutQuart" data-cycle-pager=".cycle-pager" data-cycle-pager-template="<div class='thumb' style='display:inline-block; width:%%API.customGetImageSrcWidth%%px; height:100px; background: url(%%API.customGetImageSrc%%) 50% no-repeat'><div class='overlay' style='width:%%API.customGetImageSrcWidth%%px;'></div></div>">
+        {% for p in pictures %}
+        {% set height,width = 0,0%}
+        {% set w = p.split('_')[3] or 0 %}
+        {% set h = p.split('_')[4] or 0 %}
+
+        {% if h and w %}
+            {% if theme %}
+                {% set max_width = 300 %}
+                {% set _type = 'wap' %}
+            {% else %}
+                {% set max_width = 600 %}
+                {% set _type = 'web' %}
+            {% end %}
+
+            {% set height = max_width %}
+            {% set width = max_width / float(h) * float(w) %}
+
+            {% set height100 = 100 %}
+            {% set width100 = 100 / float(h) * float(w) %}
+            <div class="carousel-item" data-thumb-img="{{ p }}?type=100h" data-thumb-img-w="{{ width100 }}">
+                <div class="item" style="width:{{ width }}px;height:{{ height }}px;background: url({{ p }}?type={{ _type }}) no-repeat center center;">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        {% end %}
+        {% end %}
+    </div>
+    <div class="slide-page"><div class="cycle-pager"></div></div>
+</div>
+<div class="carousel-container">
+    <article class="project-wrap">
+        <h3>{{ project[language + '_title']}}</h3>
+        <h4>{{ project[language + '_author']}}</h4>
+        <div class="content">
+            {% raw project[language + '_content'] %}
+        </div>
+    </article>
+</div>
+{% end %}
+
+{% block js %}
+    <script src="{{ static_url('design/js/jquery.easing.min.js') }}"></script>
+    <script src="{{ static_url('design/js/jquery.cycle2.js') }}"></script>
+    <script src="{{ static_url('design/js/jquery.cycle2.carousel.js') }}"></script>
+    <script src="{{ static_url('design/js/project.js') }}"></script>
+{% end %}

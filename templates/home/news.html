@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+哥德芬
+{% end %}
+
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/news.css') }}?v=1.0"/>
+{% end %}
+
+{% block js %}
+
+{% end %}
+
+
+{% block content %}
+    <div class="content">
+        <div class="container news-wrap">
+            {% for n in news %}
+            <div class="item-box">
+                <div class="item-con">
+                    <div class="item-detail-con">
+                        <a href="{{ reverse_url('main_newsd',language,n.id) }}" class="item-link"></a>
+                        <div class="item-detail">
+                            <p class="item-state">{{ n[language + '_title']}}</p>
+                            <p class="item-remark">{{ n['create_time'] }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% end %}
+        </div>
+    </div>
+{% end %}
+

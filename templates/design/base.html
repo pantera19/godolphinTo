@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ static_url('favicon.ico') }}"/>
+    <title>{% block title %}{% end %}</title>
+    <!–[if lt IE 9]>
+    <script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <![end]–>
+    <link rel="stylesheet" type="text/css" href="{{ static_url('design/css/bootstrap.min.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ static_url('design/css/common.css') }}"/>
+
+    {% block css %}
+    {% end %}
+</head>
+<body>
+<header>
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ reverse_url('design_index',language) }}"></a>
+                    <div class="navbar-site">
+                        <a href="javascript:void(0);" data-lan="ch">CH</a><span>/</span><a href="javascript:void(0);"
+                                                                                           data-lan="en">EN</a>
+                    </div>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-home">
+                            <a href="{{ reverse_url('design_index',language) }}" class="f-child">{{
+                                i18n[language]['home'] }}</a>
+                        </li>
+                        <li class="nav-projects">
+                            <a href="{{ reverse_url('design_projects',language) }}" class="f-child">{{
+                                i18n[language]['projects'] }}</a>
+                        </li>
+                        <li class="dropdown nav-about">
+                            <a href="{{ reverse_url('design_about1',language) }}"
+                               class="f-child dropdown-toggle dropdown-web" data-hover="dropdown"
+                               data-close-others="true">{{ i18n[language]['about'] }}</a>
+                            <a href="javascript:void(0)" class="f-child dropdown-toggle dropdown-phone"
+                               data-toggle="dropdown">{{ i18n[language]['about'] }}</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ reverse_url('design_about1',language) }}">{{ i18n[language]['wwd']
+                                    }}</a></li>
+                                <li><a href="{{ reverse_url('design_about2',language) }}">{{ i18n[language]['wwa']
+                                    }}</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-blog">
+                            <a href="{{ reverse_url('design_blogs',language) }}" class="f-child">{{
+                                i18n[language]['blog'] }}</a>
+                        </li>
+                        <li class="nav-contact">
+                            <a href="{{ reverse_url('design_contact',language) }}" class="f-child">{{
+                                i18n[language]['contact']
+                                }}</a>
+                        </li>
+                        <li class="nav-search">
+                            <a href="{{ reverse_url('design_search',language) }}" class="f-child">{{
+                                i18n[language]['search'] }}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+{% block content %}
+{% end %}
+
+<script src="{{ static_url('design/js/jquery.js') }}"></script>
+<script src="{{ static_url('design/js/bootstrap.min.js') }}?v=3.3.0"></script>
+<script src="{{ static_url('design/js/bootstrap-hover-dropdown.min.js') }}?v=2.2.1"></script>
+
+<script type="text/javascript">
+    function GetUrlRelativePath() {
+        var url = document.location.toString();
+        var arrUrl = url.split("//");
+        var start = arrUrl[1].indexOf("/");
+        var relUrl = arrUrl[1].substring(start);
+
+        if (relUrl.indexOf("?") != -1) {
+            relUrl = relUrl.split("?")[0];
+        }
+        if (relUrl.indexOf("#") != -1) {
+            relUrl = relUrl.split("#")[0];
+        }
+
+
+        var ret = relUrl.split('/')[3];
+
+        if (ret == "") {
+            ret = 'home';
+        }
+
+        if (ret == "what-we-do" || ret == 'who-we-are') {
+            ret = 'about';
+        }
+
+        return ret;
+    }
+
+    $('.navbar-site a').on('click', function () {
+        var lan = $(this).attr('data-lan');
+        var url = location.href;
+        if (url.indexOf('/' + lan) > 0)
+            return;
+        location.href = url.replace(/\/ch|\/en/, '/' + lan);
+    });
+
+    $(function () {
+        $('.nav-' + GetUrlRelativePath()).addClass('active');
+    })
+</script>
+
+{% block js %}
+{% end %}
+</body>
+</html>

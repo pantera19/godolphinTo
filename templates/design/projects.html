@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}
+godolphin | PROJECTS
+{% end %}
+
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{{ static_url('design/css/projects.css') }}"/>
+{% end %}
+
+{% block js %}
+    <script src="{{ static_url('design/js/jquery.easing.min.js') }}"></script>
+    <script src="{{ static_url('design/js/jquery.gridalicious.min.js') }}"></script>
+    <script src="{{ static_url('design/js/projects.js') }}"></script>
+{% end %}
+
+
+{% block content %}
+<section class="container">
+    <div id="device" class="gridalicious">
+        {% for p in projects %}
+        <div class="item">
+            <a href="{{ reverse_url('design_project',language,p['id']) }}"><img src="{{ p['cover'] }}" alt=""/></a>
+            <a href="{{ reverse_url('design_project',language,p['id']) }}" class="mask">{{ p[language + '_title']}}</a>
+        </div>
+        {% end %}
+    </div>
+</section>
+{% end %}

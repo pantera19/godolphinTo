@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+
+
+{% block title %}推荐词{% end %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>推荐词</h1>
+    <a href="{{ reverse_url('manage_hotword_detail') }}">
+        <h4>
+            <span class="label label-default">新增推荐词</span>
+        </h4>
+    </a>
+</div>
+
+<div class="row gallery-row">
+    {% for new in hotword %}
+    <div class="col col-xs-12">
+
+        <div class="caption">
+            <h4>
+               {{ new.ch_title }}<br/>
+                <small>{{ new.en_title }}</small>
+            </h4>
+        </div>
+        <div class="post-footer">
+            <a href="{{ reverse_url('manage_hotword_detail') }}?id={{ new.id }}">
+                <span class="label label-info">基本信息</span>
+            </a>
+            {% if new.state == 1 %}
+            <a href="{{ reverse_url('manage_hotword_state',new.id, 0)}}">
+                <span class="label label-warning">隐藏</span>
+            </a>
+            {% else %}
+            <a href="{{ reverse_url('manage_hotword_state',new.id, 1)}}">
+                <span class="label label-warning">显示</span>
+            </a>
+            {% end %}
+        </div>
+
+
+    </div>
+    {% end %}
+</div>
+
+{% end %}

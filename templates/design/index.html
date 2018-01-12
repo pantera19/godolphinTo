@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+godolphin
+{% end %}
+
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{{ static_url('design/css/index.css') }}"/>
+{% end %}
+
+{% block js %}
+    <script src="{{ static_url('design/js/jquery.easing.min.js') }}"></script>
+    <script src="{{ static_url('design/js/jquery.cycle2.js') }}"></script>
+    <script src="{{ static_url('design/js/jquery.cycle2.carousel.js') }}"></script>
+    <script src="{{ static_url('design/js/index.js') }}"></script>
+{% end %}
+
+
+{% block content %}
+<div class="carousel-container">
+    <div class="slide-show" data-cycle-slides=">div" data-cycle-fx=carousel data-cycle-timeout=3000 data-cycle-auto-height=false data-starting-slide=0 data-cycle-speed=1000 data-cycle-carousel-fluid=true data-allow-wrap=true data-cycle-carousel-offset="0" data-cycle-easing="easeOutQuart">
+        {% for c in carousel %}
+        {% set height,width = 0,0%}
+        {% set w = c['web_cover'].split('_')[3] or 0 %}
+        {% set h = c['web_cover'].split('_')[4] or 0 %}
+
+        {% if h and w %}
+            {% if theme %}
+                {% set max_width = 300 %}
+                {% set _type = 'wap' %}
+            {% else %}
+                {% set max_width = 600 %}
+                {% set _type = 'web' %}
+            {% end %}
+
+            {% set height = max_width %}
+            {% set width = max_width / float(h) * float(w) %}
+            <div class="carousel-item">
+                <div class="item"  style="width:{{ width }}px;height:{{ height }}px;background: url({{ c['web_cover'] }}?type={{ _type }}) no-repeat center center;">
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        {% end %}
+        {% end %}
+    </div>
+</div>
+{% end %}
+

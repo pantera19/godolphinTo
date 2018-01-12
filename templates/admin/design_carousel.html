@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+
+
+{% block title %}轮播图列表{% end %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>轮播图列表</h1>
+</div>
+
+<div class="row gallery-row">
+    {% for p in carousels %}
+    <div class="col col-xs-12">
+
+        <div class="col col-xs-3 col-sm-3 col-md-3 col-lg-3">
+            <div class="thumbnail">
+                <img class="img-rounded" src="{{ p.web_cover }}"/>
+            </div>
+        </div>
+        <div class="col col-xs-9 col-sm-9 col-md-9 col-lg-9">
+            <div class="caption">
+                <h4>
+                    {{ p.ch_title }}<br/>
+                    <small>{{ p.en_title }}</small>
+                </h4>
+            </div>
+            <div class="post-footer">
+                <a href="{{ reverse_url('manage_design_carousel_detail') }}?id={{ p.id }}">
+                    <span class="label label-info">基本信息</span>
+                </a><br/>
+                <a href="{{ reverse_url('manage_design_carousel_sort',p.id,'up') }}">
+                    <span class="label label-primary">上移</span>
+                </a>
+                <a href="{{ reverse_url('manage_design_carousel_sort',p.id,'down') }}">
+                    <span class="label label-danger">下移</span>
+                </a><br/>
+                {% if p.state == 1 %}
+                <a href="{{ reverse_url('manage_design_carousel_state',p.id, 0)}}">
+                    <span class="label label-warning">隐藏</span>
+                </a>
+                {% else %}
+                <a href="{{ reverse_url('manage_design_carousel_state',p.id, 1)}}">
+                    <span class="label label-warning">显示</span>
+                </a>
+                {% end %}<br/>
+            </div>
+        </div>
+    </div>
+    <div class="col col-xs-12">
+        <hr/>
+    </div>
+
+    {% end %}
+</div>
+
+{% end %}

@@ -1,0 +1,17 @@
+.search-wrap{margin:50px auto;width:600px;min-height:550px;}
+.search-wrap .search-hot{overflow: hidden;}
+.search-wrap .search-hot h5{float: left;margin-right:10px;margin-bottom:15px;cursor: pointer;}
+.search-wrap .search-hot h5 .label{font-family:"Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", Arial Unicode MS, Arial, Helvetica, sans-serif !important;}
+.search-wrap .search-box{position:relative;}
+.search-wrap .search-box input{padding-left:34px;height:30px;width:100%;font-size:16px;border:1px solid #ccc;border-radius: 3px;}
+.search-wrap .search-box .search{position:absolute;top:0;left:3px;width:30px;height:30px;background:url(img/search.png) no-repeat center center;background-size:24px auto;}
+.search-wrap .search-box .close{position:absolute;top:0;right:3px;width:30px;height:30px;background:url(img/close.png) no-repeat center center;background-size:24px auto;}
+.search-wrap .search-result{padding:5px;width:100%;border:1px solid #ccc;}
+.search-wrap .search-result li{height:32px;line-height:32px;}
+.search-wrap .search-result li a{font-size:16px;color:#808080;text-decoration:none;}
+.search-wrap .search-result li a:hover{color:#d9230f;}
+
+@media only screen and (max-width: 768px) and (min-width: 0px){
+    .search-wrap{width:100%;min-height:300px;}
+    .search-wrap .search-box{height:30px;line-height:30px;font-size: 16px;}
+}

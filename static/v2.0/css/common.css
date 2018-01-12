@@ -1,0 +1,36 @@
+html{-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {display: block;}
+body, dl, dd, p, ul, li, h1, h2, h3, form, input, textarea, select{padding: 0;margin: 0;}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/opensans-regular-webfont.eot');
+    src: url('fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/opensans-regular-webfont.woff') format('woff'),
+    url('fonts/opensans-regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Marzo-W00-Regular";
+    src: url("fonts/45563891-20ab-4087-b16c-b3cfc26faac1.eot?#iefix");
+    src: url("fonts/45563891-20ab-4087-b16c-b3cfc26faac1.eot?#iefix") format("eot"),url("fonts/e947b76a-edcf-4519-bc3d-c2da35865717.woff") format("woff"),url("fonts/c09cb36e-5e79-4033-b854-41e57fbf44fa.ttf") format("truetype");
+}
+
+body{background:#fff;font-size:14px;font-family:'Open Sans',sans-serif,"Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, STXihei, "华文细黑", Arial Unicode MS, Arial, Helvetica !important;color:#333;}
+
+a{background-color: transparent;text-decoration: none;color: inherit;}
+a:active,a:hover{outline: 0;}
+img{border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+ul,li{list-style: none;}
+.clearfix{*zoom: 1;}
+.clearfix:before,.clearfix:after {display: block;line-height: 0;content: "";}
+.clearfix:after{clear: both;}
+button, input, optgroup, select, textarea {color: inherit;font: inherit;}
+input {line-height: normal;}
+input:-webkit-autofill,textarea:-webkit-autofill,select:-webkit-autofill{-webkit-box-shadow: 0 0 0 1000px white inset;}
+
+.fl{float: left !important;}
+.fr{float: right !important;}

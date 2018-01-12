@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="icon" href="{{ static_url('favicon.ico') }}"/>
+    <title>{% block title %}{% end %}</title>
+    <!–[if lt IE 9]>
+    <script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <![endif]–>
+    {% block bootstrap %}
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/bootstrap/gdf.css') }}"/>
+
+    {#
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/bootstrap_2_3_2.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/bootstrap_3_2_0.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/font-awesome_3_0_2.css') }}"/>
+    <link rel="stylesheet" type="text/css"
+          href="{{ static_url('css/bootstrap-combined.no-icons_2_3_1.min.css') }}"/>
+    <link rel="stylesheet" type="text/css"
+          href="{{ static_url('css/bootstrap-responsive_2_3_1.min.css') }}"/>
+    #}
+    {% end %}
+    <link rel="stylesheet" type="text/css"
+          href="{{ static_url('css/bootstrap-datetimepicker.min.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/normalize.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/style.css') }}"/>
+    <link rel="stylesheet" type="text/css"
+          href="{{ static_url('plugins/fileinput/css/fileinput.min.css') }}"/>
+
+
+    <link href="{{ static_url('plugins/wysiwyg/external/google-code-prettify/prettify.css') }}"
+          rel="stylesheet">
+    <link href="{{ static_url('plugins/wysiwyg/css/editor_style.css') }}" rel="stylesheet">
+
+
+    <script src="{{ static_url('js/jquery.js') }}"></script>
+    <script src="{{ static_url('js/bootstrap_2_3_1.min.js') }}"></script>
+
+    <!– fileinput >
+    <script src="{{ static_url('plugins/fileinput/js/fileinput.js') }}" type="text/javascript"></script>
+    <script src="{{ static_url('plugins/fileinput/js/locales/zh.js') }}" type="text/javascript"></script>
+
+    <!– wysiwyg >
+    <script src="{{ static_url('plugins/wysiwyg/js/bootstrap-wysiwyg.js') }}"></script>
+    <script src="{{ static_url('plugins/wysiwyg/external/jquery.hotkeys.js') }}"></script>
+    <script src="{{ static_url('js/ajaxfileupload.js') }}"></script>
+    <script src="{{ static_url('js/bootstrap-datetimepicker.min.js') }}"></script>
+
+
+    {% block css %}
+    {% end %}
+</head>
+<body>
+{% block navbar %}
+<div class="navbar" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="javascript:void(0)"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">主站 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ reverse_url('manage_main_carousel') }}">轮播图</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="{{ reverse_url('manage_main_entrance') }}">首页入口</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="{{ reverse_url('manage_main_news') }}">新闻</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="{{ reverse_url('manage_hotword') }}">热搜词</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="{{ reverse_url('manage_main_about') }}">关于</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="{{ reverse_url('manage_main_contact') }}">联系我们</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">设计站 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ reverse_url('manage_design_carousel') }}">轮播图</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="{{ reverse_url('manage_design_project') }}">项目</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="{{ reverse_url('manage_design_news') }}">新闻</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="{{ reverse_url('manage_design_history') }}">公司历程</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="{{ reverse_url('manage_design_about') }}">关于</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="{{ reverse_url('manage_design_contact') }}">联系我们</a></li>
+                    </ul>
+                </li>
+
+
+                <li><a href="{{ reverse_url('manage_events') }}">活动</a></li>
+                <li><a href="{{ reverse_url('manage_contacts') }}">联系信息</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                {% if True %}
+                <li><a href="{{ reverse_url('manage_change_password') }}">Change Password</a></li>
+                <li><a href="{{ reverse_url('manage_logout') }}">Log Out</a></li>
+                {% else %}
+                <li><a href="{{ reverse_url('manage_login') }}">Log In</a></li>
+                {% end %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% end %}
+{% block content %}
+<div class="container">
+
+
+    {% block page_content %}{% end %}
+</div>
+{% end %}
+
+{% block js %}
+{% end %}
+</body>
+</html>

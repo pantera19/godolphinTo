@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+
+
+{% block title %}联系列表{% end %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>联系列表</h1>
+</div>
+
+<div class="row gallery-row">
+    <table class="table table-striped">
+        <tr>
+            <th>source</th>
+            <th>name</th>
+            <th>email</th>
+            <th>subject</th>
+            <th>message</th>
+            <th>create_time</th>
+        </tr>
+        {% for contact in contacts %}
+        <tr>
+            <td>
+                {{ contact.source }}
+            </td>
+            <td>
+                {{ contact.name }}
+            </td>
+            <td>{{ contact.email }}
+            </td>
+            <td>{{ contact.subject }}
+            </td>
+            <td>{{ contact.message }}
+            </td>
+            <td>{{ contact.create_time }}
+            </td>
+        </tr>
+        {% end %}
+    </table>
+
+</div>
+{% if pagination %}
+<div class="pagination">
+    {{ macros.pagination_widget(pagination, 'manage.contacts') }}
+</div>
+{% end %}
+{% end %}

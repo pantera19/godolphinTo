@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+
+
+{% block title %}项目详情{% end %}
+
+{% block css %}
+
+{% end %}
+{% block page_content %}
+<div class="page-header">
+    <h1>项目详情</h1>
+    {% module Template("widget/return_back.html") %}
+</div>
+<div class="col-md-4">
+    <form action="{{ reverse_url('manage_events_detail') }}" class="form form-horizontal" method="post" role="form">
+        <input class="form-control" id="id" name="id" type="hidden" value="{{ events['id'] }}">
+
+
+        {% module Template("widget/text.html",title='中文标题',id='ch_title',value=events['ch_title']) %}
+        {% module Template("widget/text.html",title='英文标题',id='en_title',value=events['en_title']) %}
+
+        {% module Template("widget/fileinput.html",title='封面图',id='web_cover',tips='图片尺寸最小750x395,图片小于300kb',img=events['web_cover'],h=80,w=240,file_num=1) %}
+
+
+
+        <div class="form-group ">
+            <input class="btn btn-default" id="submit" name="submit" type="submit" value="提交">
+        </div>
+    </form>
+
+
+</div>
+{% end %}
+
+{% block js %}
+
+{% end %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+哥德芬
+{% end %}
+
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ static_url('css/news.css') }}?v=1.0"/>
+{% end %}
+
+
+{% block content %}
+<div class="content">
+    <div class="container news-wrap">
+        <h3>{{ news[language + '_title']}}</h3>
+        <h4>{{ news[language + '_author']}}</h4>
+        <div class="content">
+            {% raw news[language + '_content'] %}
+        </div>
+    </div>
+</div>
+{% end %}
+
+{% block js %}
+{% end %}

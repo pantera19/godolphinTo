@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+哥德芬
+{% end %}
+
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ static_url('css/jquery-confirm.css') }}"/>
+<link rel="stylesheet" type="text/css" href="{{ static_url('css/event.css') }}"/>
+<style type="text/css">
+    .main .container {
+        margin: 0 auto;
+        max-width: 1100px;
+        width: 100%;
+    }
+
+    .addmodtext {
+        margin-top: 20px;
+    }
+
+    h2 {
+        color: #000;
+        font-family: "text", Arial;
+        font-size: 20px;
+        line-height: 26px;
+        margin: 10px 0 5px 0;
+    }
+</style>
+{% end %}
+
+{% block js %}
+<script src="{{ static_url('js/jquery-confirm.js') }}"></script>
+<script src="{{ static_url('js/event.js') }}"></script>
+{% end %}
+
+
+{% block content %}
+<div class="content">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="{{ reverse_url('main_index',language) }}">{{ i18n[language]['home'] }}</a></li>
+            <li class="active"><a href="{{ reverse_url('main_events',language) }}">{{ i18n[language]['events'] }}</a></li>
+            <li class="active">{{ events[language + '_title']}}</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content">
+    <div class="container">
+        <div class="row gallery-row">
+            <div class="col col-xs-12">
+                <div class="thumbnail">
+                    <img class="img-rounded" src="{{ events['web_cover'] }}"/>
+                </div>
+            </div>
+        </div>
+        <div class="event-wrap">
+            <div class="content-box">
+                <h4 class="text-center"> {{ events[language + '_title']}} </h4>
+                <h2> {% raw events[language + '_content'] %} </h2>
+            </div>
+            {% if events.state == 1 %}
+            <div class="input-box">
+                <div class="input-item"><label>姓名：</label><input type="text" id="userName" name="Name"
+                                                                 placeholder="Name"/></div>
+                <div class="input-item"><label>电话：</label><input type="text" id="userPhone" name="Phone"
+                                                                 placeholder="Phone"/></div>
+                <div class="input-item"><label>邮箱：</label><input type="text" id="userEmail" name="Email"
+                                                                 placeholder="Email"/></div>
+                <div class="input-item text-center">
+                    <button id="btnSend">报名</button>
+                    <input type="hidden" id="eventID" value="{{ events['id']}}"/>
+                </div>
+            </div>
+            {% end %}
+        </div>
+    </div>
+</div>
+{% end %}
+

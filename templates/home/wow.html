@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+哥德芬
+{% end %}
+
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ static_url('css/jquery.vector-map.css') }}"/>
+<link rel="stylesheet" type="text/css" href="{{ static_url('css/wow.css') }}?v=1.0"/>
+{% end %}
+
+{% block js %}
+<script src="{{ static_url('js/echarts.min.js') }}"></script>
+<script src="{{ static_url('js/world.js') }}"></script>
+<script src="{{ static_url('js/china.js') }}"></script>
+<script src="{{ static_url('js/wow.js') }}?v=1.0"></script>
+
+<script>
+
+    var china_data = [];
+    {% for c in cd %}
+    china_data.push({'name':'{{ c["name"] }}','value': '{{ c["value"] }}'});
+    {% end %}
+    var world_data = [];
+    {% for c in wd %}
+    world_data.push({'name':'{{ c["name"] }}','value': '{{ c["value"] }}'});
+    {% end %}
+
+</script>
+{% end %}
+
+
+{% block content %}
+<div class="content">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="{{ reverse_url('main_index',language) }}">{{ i18n[language]['home'] }}</a></li>
+            <li class="active">{{ i18n[language]['wow'] }}</li>
+        </ol>
+    </div>
+</div>
+
+<div class="main">
+    <div class="container">
+        <div id="backMap" class="back-map no-dis">
+            <<返回
+        </div>
+        <div class="map-container">
+            <div id="worldMap" class="vector-map"></div>
+            <div id="chinaMap" class="vector-map no-dis"></div>
+        </div>
+
+        <div class="news-list">
+            <ul>
+                {% for p in projects %}
+                <li world_name="{{ p.en_author.split(',')[-1] }}" china_name="{{ p.ch_author.split(' ')[1] }}">
+                    <a href="{{ reverse_url('design_project',language,p.id) }}">{{ p[language + '_title']}}</a>
+                </li>
+                {% end %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+{% end %}
+

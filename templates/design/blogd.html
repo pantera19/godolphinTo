@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+godolphin
+{% end %}
+
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ static_url('design/css/blog.css') }}?v=1.0"/>
+{% end %}
+
+
+{% block content %}
+<div class="design-bg">
+    <div class="container blog-wrap">
+        <h3>{{ news[language + '_title']}}</h3>
+        <h4>{{ news[language + '_author']}}</h4>
+        <div class="content">
+            {% raw news[language + '_content'] %}
+        </div>
+    </div>
+</div>
+{% end %}
+
+{% block js %}
+{% end %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+godolphin | SEARCH
+{% end %}
+
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{{ static_url('design/css/about.css') }}"/>
+{% end %}
+
+{% block js %}
+    <script src="{{ static_url('design/js/search.js') }}"></script>
+{% end %}
+
+
+{% block content %}
+    <div class="container">
+        <div class="search-wrap">
+            <div class="search-box">
+                <span class="search"></span>
+                <input type="search" autocapitalize="off" autocorrect="off" id="searchPage" placeholder="Search Site" oninput="OnInputSearch(event)" onpropertychange="OnPropSearchChanged(event)" />
+                <span class="close no-dis"></span>
+            </div>
+            <ul class="search-result no-dis">
+            </ul>
+            <input type="hidden" id="langCode" value="{{ language }}" />
+        </div>
+    </div>
+{% end %}
+

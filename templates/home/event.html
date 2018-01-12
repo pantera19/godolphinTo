@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+哥德芬
+{% end %}
+
+
+{% block css %}
+<style type="text/css">
+    h4 {
+        color: #ffffff;
+    }
+</style>
+{% end %}
+
+{% block js %}
+
+{% end %}
+
+
+{% block content %}
+<div class="content">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="{{ reverse_url('main_index',language) }}">{{ i18n[language]['home'] }}</a></li>
+            <li class="active">{{ i18n[language]['events'] }}</li>
+        </ol>
+    </div>
+</div>
+
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                {% for e in events %}
+                {% if e['state'] == 1 %}
+                    {% set theme ='' %}
+                {% else%}
+                    {% set theme ='item-theme-gray' %}
+                {% end %}
+                <div class="item-box {{ theme }}">
+                    <div class="item-con">
+                        <div class="item-detail-con">
+                            <a href="{{ reverse_url('main_event',language,e.id) }}" class="item-link"></a>
+                            <div class="item-image">
+                                <img src="http://www.godolphin.org.cn{{ e['web_cover'] }}" alt="" />
+                            </div>
+                            <div class="item-detail">
+                                <p class="item-state">{{ i18n[language]['event_state'][e.state] }}</p>
+                                <p class="item-title">{{ e[language + '_title']}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% end %}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{% end %}
+

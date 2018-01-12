@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+哥德芬
+{% end %}
+
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/search.css') }}"/>
+{% end %}
+
+{% block js %}
+    <script src="{{ static_url('js/search.js') }}"></script>
+{% end %}
+
+
+{% block content %}
+<div class="content">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="{{ reverse_url('main_index',language) }}">{{ i18n[language]['home'] }}</a></li>
+            <li class="active">{{ i18n[language]['search'] }}</li>
+        </ol>
+    </div>
+</div>
+
+<div class="main">
+    <div class="container">
+        <div class="search-wrap">
+            <div class="search-hot">
+                {% for hw in hotword %}
+                    <h5><span class="label label-default">{{ hw[language + '_title'] }}</span></h5>
+                {% end %}
+            </div>
+            <div class="search-box">
+                <span class="search"></span>
+                <input type="search" autocapitalize="off" autocorrect="off" id="searchPage" placeholder="Search Site" oninput="OnInputSearch(event)" onpropertychange="OnPropSearchChanged(event)" />
+                <span class="close no-dis"></span>
+            </div>
+            <ul class="search-result no-dis">
+            </ul>
+            <input type="hidden" id="langCode" value="{{ language }}" />
+        </div>
+    </div>
+</div>
+
+
+{% end %}
+

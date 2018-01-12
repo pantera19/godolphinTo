@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+godolphin | CONTACT
+{% end %}
+
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{{ static_url('design/css/jquery-confirm.css') }}"/>
+<link rel="stylesheet" type="text/css" href="{{ static_url('design/css/about.css') }}?v=1.0"/>
+{% end %}
+
+{% block js %}
+<script src="{{ static_url('design/js/jquery-confirm.js') }}"></script>
+<script src="{{ static_url('design/js/contact.js') }}"></script>
+{% end %}
+
+
+{% block content %}
+<div class="design-bg">
+    <div class="container w1000">
+        {% for row in rows %}
+        {% set st = ['','switch-box','half-box']%}
+        {% set co = ['','item-theme-dark','item-theme-gray']%}
+        {% if row['stype'] != 3 %}
+            <div class="item-box {{ st[row['stype']] }} {{ co[row['color']] }}">
+                <div class="item-con">
+                    <div class="item-detail-con">
+                        <div class="item-image w588">
+                            <img src="{{ row['web_cover'] if theme else  row['wap_cover'] }}" alt=""/>
+                        </div>
+                        <div class="item-detail w40">
+                            <p class="item-state">{{ row[language + '_title']}}</p>
+                            <p class="item-remark">{% raw row[language + '_content'] %}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <div class="item-box full-box">
+                <div class="item-con">
+                    <div class="item-detail-con">
+                        <a href="" class="item-link">
+                        </a>
+                        <div class="item-image">
+                            <img src="{{ row['web_cover'] if theme else  row['wap_cover'] }}"
+                                 alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% end %}
+        {% end %}
+        <div class="item-box bg-color-white auto-h">
+            <div class="item-con bg-color-white auto-h">
+                <div class="contact-box">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="userName" placeholder="{{ i18n[language]['name'] }}">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="userEmail" placeholder="{{ i18n[language]['email'] }}">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="userSubject" placeholder="{{ i18n[language]['subject'] }}">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="userMessage" placeholder="{{ i18n[language]['message'] }}"></textarea>
+                    </div>
+                    <button id="btnSend" type="submit" class="btn btn-default">{{ i18n[language]['send'] }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% end %}
+

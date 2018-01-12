@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="icon" href="{{ static_url('favicon.ico') }}"/>
+    <title>{% block title %}{% end %}</title>
+    <!–[if lt IE 9]>
+    <script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <![endif]–>
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/bootstrap/gdf.css') }}?v=1.1"/>
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/normalize.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/common.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ static_url('css/style.css') }}?v=1.2"/>
+
+
+    {# lumen paper simplex #}
+    {% block css %}
+    {% end %}
+</head>
+<body>
+<div class="navbar-wrapper">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1"><span
+                        class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="{{ reverse_url('main_index',language) }}">
+                    Godolphin
+                </a>
+                <div class="navbar-site">
+                    <a href="javascript:void(0);" data-lan="ch">CH</a><span>/</span><a href="javascript:void(0);"
+                                                                                       data-lan="en">EN</a>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right ">
+                    <li class="nav-index">
+                        <a href="{{ reverse_url('main_index',language) }}">{{ i18n[language]['home'] }}</a>
+                    </li>
+                    <li class="nav-event">
+                        <a href="{{ reverse_url('main_events',language) }}">{{ i18n[language]['events'] }}</a>
+                    </li>
+                    <li class="nav-about-us">
+                        <a href="{{ reverse_url('main_about',language) }}">{{ i18n[language]['about'] }}</a>
+                    </li>
+                    <li class="nav-contact">
+                        <a href="{{ reverse_url('main_contact',language) }}">{{ i18n[language]['contact'] }}</a>
+                    </li>
+                    <li class="nav-wow">
+                        <a href="{{ reverse_url('main_wow',language) }}">{{ i18n[language]['wow'] }}</a>
+                    </li>
+                    <li class="nav-wow">
+                        <a href="{{ reverse_url('main_news',language) }}">{{ i18n[language]['news'] }}</a>
+                    </li>
+                    <li class="nav-search">
+                        <a href="{{ reverse_url('main_search',language) }}">{{ i18n[language]['search'] }}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+{% block content %}
+{% end %}
+
+<footer class="site-footer clearfix">
+    <div class="container">
+        <p class="copyright">Powered by godolphin.org.cn Copyright ©2016 哥德芬.all rights reserved</p>
+    </div>
+</footer>
+
+
+<script src="{{ static_url('js/jquery.js') }}"></script>
+<script src="{{ static_url('js/bootstrap.min.js') }}"></script>
+
+
+<script type="text/javascript">
+    function GetUrlRelativePath() {
+        var url = document.location.toString();
+        var arrUrl = url.split("//");
+        var start = arrUrl[1].indexOf("/");
+        var relUrl = arrUrl[1].substring(start);
+
+        if (relUrl.indexOf("?") != -1) {
+            relUrl = relUrl.split("?")[0];
+        }
+        if (relUrl.indexOf("#") != -1) {
+            relUrl = relUrl.split("#")[0];
+        }
+
+        var ret = relUrl.split('/')[2];
+        if (ret == "") {
+            ret = 'index';
+        }
+        return ret;
+    }
+
+    $('.navbar-site a').on('click', function () {
+        var lan = $(this).attr('data-lan');
+        var url = location.href;
+        if (url.indexOf('/' + lan + '/') > 0)
+            return;
+        location.href = url.replace(/\/ch\/|\/en\//, '/' + lan + '/');
+    });
+
+    $(function () {
+        $('.nav-' + GetUrlRelativePath()).addClass('active')
+
+    })
+</script>
+{% block js %}
+{% end %}
+</body>
+</html>

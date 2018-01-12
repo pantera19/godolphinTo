@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+
+
+{% block title %}编辑首页文章入口{% end %}
+
+{% block page_content %}
+
+<div class="page-header">
+    <h1>编辑首页文章入口</h1>
+    {% module Template("widget/return_back.html") %}
+</div>
+<div class="col-md-6">
+    <form action="{{ reverse_url('manage_main_entrance_detail') }}" class="form form-horizontal" method="post" role="form">
+        <input class="form-control" id="id" name="id" type="hidden" value="{{ slider.id }}">
+
+        {% module Template("widget/text.html",title='ch标题',id='ch_title',value=slider.ch_title) %}
+        {% module Template("widget/text.html",title='ch链接',id='ch_url',value=slider.ch_url) %}如果无连接请复制填写"   javascript:void(0)  "
+        {% module Template("widget/textarea.html",title='ch简述',id='ch_summary',value=slider.ch_summary) %}
+        <hr/>
+
+
+        {% module Template("widget/text.html",title='en标题',id='en_title',value=slider.en_title) %}
+        {% module Template("widget/text.html",title='en链接',id='en_url',value=slider.en_url) %}如果无连接请复制填写"   javascript:void(0)  "
+        {% module Template("widget/textarea.html",title='en简述',id='en_summary',value=slider.en_summary) %}
+
+        {% module Template("widget/fileinput.html",title='封面',id='cover',tips='图片宽高比要求为1:1，建议尺寸大于500xp:500px,图片小于300kb',img=slider.cover,h=200,w=200,file_num=1) %}
+
+
+        <div class="form-group ">
+            <input class="btn btn-default" id="submit" name="submit" type="submit" value="提交">
+        </div>
+    </form>
+
+
+</div>
+{% end %}
+
+{% block js %}
+
+{% end %}

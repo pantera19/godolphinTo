@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+godolphin | BLOG
+{% end %}
+
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{{ static_url('design/css/blog.css') }}?v=1.0"/>
+{% end %}
+
+{% block js %}
+
+{% end %}
+
+
+{% block content %}
+    <div class="design-bg">
+        <div class="container w550">
+            {% for n in news %}
+            <div class="item-box">
+                <div class="item-con">
+                    <div class="item-detail-con">
+                        <a href="{{ reverse_url('design_blog',language,n.id) }}" class="item-link"></a>
+                        <div class="item-detail">
+                            <p class="item-state">{{ n[language + '_title']}}</p>
+                            <p class="item-remark">{{ n['create_time'] }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% end %}
+        </div>
+    </div>
+{% end %}
+

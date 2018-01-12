@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+
+
+{% block title %}
+{{ ['关于','联系我们','D公司历程','D关于','D联系我们'][s] }}
+{% end %}
+
+{% block css %}
+
+{% end %}
+{% block page_content %}
+<div class="page-header">
+    <h1>{{ ['关于','联系我们','D公司历程','D关于','D联系我们'][s] }}</h1>
+    {% module Template("widget/return_back.html") %}
+</div>
+<div class="col-md-4">
+    <form action="{{ reverse_url('manage_appleother_detail') }}?s={{ s }}" class="form form-horizontal" method="post" role="form">
+        <input class="form-control" id="id" name="id" type="hidden" value="{{ other['id'] }}">
+        <div class="form-group"><label class="control-label">样式</label>
+            <select name="stype" id="stype" class="form-control">
+                <option value="0">100% - 左文右图</option>
+                <option value="1">100% - 右图左文</option>
+                <option value="3">100% - 图片</option>
+                <option value="2">&nbsp;5&nbsp;0% - 左文右图</option>
+
+            </select>
+        </div>
+        <div class="form-group"><label class="control-label">颜色</label>
+            <select name="color" id="color" class="form-control">
+                <option value="0">白</option>
+                <option value="1">黑</option>
+                <option value="2">灰</option>
+            </select>
+        </div>
+
+        {% module Template("widget/text.html",title='中文标题',id='ch_title',value=other['ch_title']) %}
+
+        {% module Template("widget/textarea.html",title='中文内容',id='ch_content',value=other['ch_content']) %}
+        <hr>
+        {% module Template("widget/text.html",title='英文标题',id='en_title',value=other['en_title']) %}
+        {% module Template("widget/textarea.html",title='英文内容',id='en_content',value=other['en_content']) %}
+
+        {% module Template("widget/fileinput.html",title='封面图',id='web_cover',tips='50% 图片尺寸宽260／高405,100% 图片尺寸最小600:400,或3：2更大的图,图片小于300kb',img=other['web_cover'],h=80,w=240,file_num=1) %}
+        {% module Template("widget/fileinput.html",title='手机端封面图',id='wap_cover',tips='图片尺寸最小600:400,或3：2更大的图,图片小于300kb',img=other['wap_cover'],h=80,w=240,file_num=1) %}
+
+
+
+        <div class="form-group ">
+            <input class="btn btn-default" id="submit" name="submit" type="submit" value="提交">
+        </div>
+    </form>
+
+
+</div>
+{% end %}
+
+{% block js %}
+    <script>
+        $('#stype').val('{{ other["stype"] if other["stype"] else 0 }}');
+        $('#color').val('{{ other["color"] if other["color"] else 0 }}');
+
+    </script>
+{% end %}
