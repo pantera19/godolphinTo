@@ -12,6 +12,6 @@
 .search-wrap .search-result li a:hover{color:#d9230f;}
 
 @media only screen and (max-width: 768px) and (min-width: 0px){
-    .search-wrap{width:100%;min-height:300px;}
+    .search-wrap{padding:0 20px;width:100%;min-height:300px;}
     .search-wrap .search-box{height:30px;line-height:30px;font-size: 16px;}
 }

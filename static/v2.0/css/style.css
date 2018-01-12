@@ -67,7 +67,7 @@
     .site-nav .navbar{margin:0;min-height:40px;background:#fff;border:1px solid #eee;}
     .site-nav .navbar .container-fluid{padding:0;}
     .site-nav .navbar .container-fluid .navbar-header{margin:0;padding:0 10px;}
-    .site-nav .navbar-brand{padding:13px 15px 0 5px;height:40px;}
+    .site-nav .navbar-brand{padding:13px 15px 0 5px;height:auto;}
     .site-nav .navbar-brand{width: auto;font-size:17px;text-indent:0;background:none;}
     .site-nav .navbar-site{display: inline-block;padding:12px 0 0 5px;position: static;top:0;right:0;}
     .site-nav .navbar-site a{font-size:13px;color:#777;}
@@ -78,6 +78,7 @@
     .site-nav .navbar-collapse a{display:block;padding:10px 15px;line-height:32px;font-size:13px;color:#777;text-decoration: none;}
     .site-nav .navbar-collapse span{display:none;}
     .site-header .ht{display:none;}
+    .site-nav .navbar-collapse a.active{ color: #d9230f; background-color: transparent; }
 
     .swiper-wrapper .swiper-slide{background-size:100% !important;}
 

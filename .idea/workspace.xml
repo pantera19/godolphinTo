@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2f7612dc-ce5d-42e9-b958-4bdf82da2c10" name="Default" comment="" />
+    <list default="true" id="2f7612dc-ce5d-42e9-b958-4bdf82da2c10" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/search.css" afterPath="$PROJECT_DIR$/static/css/search.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/design/css/common.css" afterPath="$PROJECT_DIR$/static/design/css/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/v2.0/css/style.css" afterPath="$PROJECT_DIR$/static/v2.0/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home/index.html" afterPath="$PROJECT_DIR$/templates/home/index.html" />
+    </list>
     <ignored path="godolphinTo.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -14,7 +19,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/godolphinTo$app.coverage" NAME="app Coverage Results" MODIFIED="1515737185240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/godolphinTo$app.coverage" NAME="app Coverage Results" MODIFIED="1515749314921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -24,167 +29,215 @@
     <favorites_list name="godolphinTo" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="54" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/api/api.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-              <folding>
-                <marker date="1515741520151" expanded="true" signature="450:537" placeholder="insert into eventmember... " />
-                <marker date="1515741520151" expanded="true" signature="1111:1205" placeholder="insert into contact... " />
-                <marker date="1515741520151" expanded="true" signature="1665:1757" placeholder="select * fro... DesignProject" />
-                <marker date="1515741520151" expanded="true" signature="2170:2259" placeholder="select * fro... DesignNews" />
-                <marker date="1515741520151" expanded="true" signature="2910:3002" placeholder="select * fro... DesignProject" />
-                <marker date="1515741520151" expanded="true" signature="3415:3504" placeholder="select * fro... DesignNews" />
-                <marker date="1515741520151" expanded="true" signature="3895:3980" placeholder="select * fro... Events" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="img.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/modules/img.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/modules/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="520" column="25" selection-start-line="520" selection-start-column="25" selection-end-line="520" selection-end-column="25" />
+            <state vertical-scroll-proportion="-7.0">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <marker date="1515741520149" expanded="true" signature="754:791" placeholder="select * fro... users" />
-                <marker date="1515741520149" expanded="true" signature="1537:1574" placeholder="select * fro... users" />
-                <marker date="1515741520149" expanded="true" signature="1721:1766" placeholder="update users... " />
-                <marker date="1515741520149" expanded="true" signature="2110:2155" placeholder="select * fro... MainCarousel" />
-                <marker date="1515741520149" expanded="true" signature="2414:2452" placeholder="select * fro... MainCarousel" />
-                <marker date="1515741520149" expanded="true" signature="2883:2968" placeholder="update MainC... " />
-                <marker date="1515741520149" expanded="true" signature="3229:3273" placeholder="update MainC... " />
-                <marker date="1515741520149" expanded="true" signature="3483:3521" placeholder="select * fro... MainCarousel" />
-                <marker date="1515741520149" expanded="true" signature="3727:3767" placeholder="select * fro... MainCarousel" />
-                <marker date="1515741520149" expanded="true" signature="3832:3875" placeholder="update MainC... " />
-                <marker date="1515741520149" expanded="true" signature="3951:3994" placeholder="update MainC... " />
-                <marker date="1515741520149" expanded="true" signature="4090:4130" placeholder="select * fro... MainCarousel" />
-                <marker date="1515741520149" expanded="true" signature="4195:4238" placeholder="update MainC... " />
-                <marker date="1515741520149" expanded="true" signature="4314:4357" placeholder="update MainC... " />
-                <marker date="1515741520149" expanded="true" signature="4571:4614" placeholder="select * fro... MainEntrance" />
-                <marker date="1515741520149" expanded="true" signature="4870:4909" placeholder="select * fro... MainEntrance" />
-                <marker date="1515741520149" expanded="true" signature="5450:5566" placeholder="update MainE... " />
-                <marker date="1515741520149" expanded="true" signature="5999:6059" placeholder="select * fro... MainNews" />
-                <marker date="1515741520149" expanded="true" signature="6366:6400" placeholder="select * fro... MainNews" />
-                <marker date="1515741520149" expanded="true" signature="6939:6973" placeholder="select * fro... MainNews" />
-                <marker date="1515741520149" expanded="true" signature="7018:7099" placeholder="update MainN... " />
-                <marker date="1515741520149" expanded="true" signature="7206:7331" placeholder="insert into MainNews... " />
-                <marker date="1515741520149" expanded="true" signature="7647:7687" placeholder="update MainN... " />
-                <marker date="1515741520149" expanded="true" signature="7931:7965" placeholder="select * fro... MainNews" />
-                <marker date="1515741520149" expanded="true" signature="8324:8358" placeholder="select * fro... MainNews" />
-                <marker date="1515741520149" expanded="true" signature="8434:8479" placeholder="update MainN... " />
-                <marker date="1515741520149" expanded="true" signature="8522:8567" placeholder="update MainN... " />
-                <marker date="1515741520149" expanded="true" signature="8883:8930" placeholder="select * fro... designCarousel" />
-                <marker date="1515741520149" expanded="true" signature="9193:9233" placeholder="select * fro... designCarousel" />
-                <marker date="1515741520149" expanded="true" signature="9638:9725" placeholder="update desig... " />
-                <marker date="1515741520149" expanded="true" signature="10002:10048" placeholder="update desig... " />
-                <marker date="1515741520149" expanded="true" signature="10262:10302" placeholder="select * fro... designCarousel" />
-                <marker date="1515741520149" expanded="true" signature="10508:10550" placeholder="select * fro... designCarousel" />
-                <marker date="1515741520149" expanded="true" signature="10615:10660" placeholder="update desig... " />
-                <marker date="1515741520149" expanded="true" signature="10736:10781" placeholder="update desig... " />
-                <marker date="1515741520149" expanded="true" signature="10877:10919" placeholder="select * fro... designCarousel" />
-                <marker date="1515741520149" expanded="true" signature="10984:11029" placeholder="update desig... " />
-                <marker date="1515741520149" expanded="true" signature="11105:11150" placeholder="update desig... " />
-                <marker date="1515741520149" expanded="true" signature="11530:11592" placeholder="select * fro... designNews" />
-                <marker date="1515741520149" expanded="true" signature="11903:11939" placeholder="select * fro... designNews" />
-                <marker date="1515741520149" expanded="true" signature="12480:12516" placeholder="select * fro... designNews" />
-                <marker date="1515741520149" expanded="true" signature="12561:12644" placeholder="update desig... " />
-                <marker date="1515741520149" expanded="true" signature="12751:12878" placeholder="insert into designNews... " />
-                <marker date="1515741520149" expanded="true" signature="13198:13240" placeholder="update desig... " />
-                <marker date="1515741520149" expanded="true" signature="13488:13524" placeholder="select * fro... designNews" />
-                <marker date="1515741520149" expanded="true" signature="13887:13923" placeholder="select * fro... designNews" />
-                <marker date="1515741520149" expanded="true" signature="13999:14046" placeholder="update desig... " />
-                <marker date="1515741520149" expanded="true" signature="14089:14136" placeholder="update desig... " />
-                <marker date="1515741520149" expanded="true" signature="14623:14688" placeholder="select * fro... DesignProject" />
-                <marker date="1515741520149" expanded="true" signature="15017:15056" placeholder="select * fro... DesignProject" />
-                <marker date="1515741520149" expanded="true" signature="15742:15781" placeholder="select * fro... DesignProject" />
-                <marker date="1515741520149" expanded="true" signature="15829:15924" placeholder="update Desig... " />
-                <marker date="1515741520149" expanded="true" signature="16038:16168" placeholder="insert into DesignProject... " />
-                <marker date="1515741520149" expanded="true" signature="16494:16539" placeholder="update Desig... " />
-                <marker date="1515741520149" expanded="true" signature="16796:16835" placeholder="select * fro... designproject" />
-                <marker date="1515741520149" expanded="true" signature="17216:17255" placeholder="select * fro... designproject" />
-                <marker date="1515741520149" expanded="true" signature="17334:17384" placeholder="update desig... " />
-                <marker date="1515741520149" expanded="true" signature="17427:17477" placeholder="update desig... " />
-                <marker date="1515741520149" expanded="true" signature="17811:17850" placeholder="select * fro... designproject" />
-                <marker date="1515741520149" expanded="true" signature="18412:18451" placeholder="select * fro... designproject" />
-                <marker date="1515741520149" expanded="true" signature="18564:18612" placeholder="update desig... " />
-                <marker date="1515741520149" expanded="true" signature="19093:19151" placeholder="select * fro... Events" />
-                <marker date="1515741520149" expanded="true" signature="19460:19492" placeholder="select * fro... Events" />
-                <marker date="1515741520149" expanded="true" signature="19966:19998" placeholder="select * fro... Events" />
-                <marker date="1515741520149" expanded="true" signature="20045:20111" placeholder="update Event... " />
-                <marker date="1515741520149" expanded="true" signature="20207:20321" placeholder="insert into Events... " />
-                <marker date="1515741520149" expanded="true" signature="20589:20627" placeholder="update Event... " />
-                <marker date="1515741520149" expanded="true" signature="20867:20899" placeholder="select * fro... Events" />
-                <marker date="1515741520149" expanded="true" signature="21258:21290" placeholder="select * fro... Events" />
-                <marker date="1515741520149" expanded="true" signature="21366:21409" placeholder="update Event... " />
-                <marker date="1515741520149" expanded="true" signature="21452:21495" placeholder="update Event... " />
-                <marker date="1515741520149" expanded="true" signature="22013:22081" placeholder="select * fro... eventmember" />
-                <marker date="1515741520149" expanded="true" signature="22474:22533" placeholder="select * fro... Contact" />
-                <marker date="1515741520149" expanded="true" signature="22801:22822" placeholder="select * fro... HotWord" />
-                <marker date="1515741520149" expanded="true" signature="23065:23098" placeholder="select * fro... HotWord" />
-                <marker date="1515741520149" expanded="true" signature="23506:23539" placeholder="select * fro... HotWord" />
-                <marker date="1515741520149" expanded="true" signature="23587:23641" placeholder="update HotWo... " />
-                <marker date="1515741520149" expanded="true" signature="23726:23787" placeholder="insert into HotWord... " />
-                <marker date="1515741520149" expanded="true" signature="24077:24116" placeholder="update HotWo... " />
-                <marker date="1515741520149" expanded="true" signature="24302:24370" placeholder="select * fro... AppleOther" />
-                <marker date="1515741520149" expanded="true" signature="24567:24635" placeholder="select * fro... AppleOther" />
-                <marker date="1515741520149" expanded="true" signature="24834:24902" placeholder="select * fro... AppleOther" />
-                <marker date="1515741520149" expanded="true" signature="25099:25167" placeholder="select * fro... AppleOther" />
-                <marker date="1515741520149" expanded="true" signature="25366:25434" placeholder="select * fro... AppleOther" />
-                <marker date="1515741520149" expanded="true" signature="25724:25760" placeholder="select * fro... AppleOther" />
-                <marker date="1515741520149" expanded="true" signature="26837:26873" placeholder="select * fro... AppleOther" />
-                <marker date="1515741520149" expanded="true" signature="26919:27048" placeholder="update Apple... " />
-                <marker date="1515741520149" expanded="true" signature="27248:27300" placeholder="select count... AppleOther" />
-                <marker date="1515741520149" expanded="true" signature="27370:27515" placeholder="insert into AppleOther... " />
-                <marker date="1515741520149" expanded="true" signature="27987:28029" placeholder="update Apple... " />
-                <marker date="1515741520149" expanded="true" signature="28085:28121" placeholder="select * fro... AppleOther" />
-                <marker date="1515741520149" expanded="true" signature="28438:28474" placeholder="select * fro... AppleOther" />
-                <marker date="1515741520149" expanded="true" signature="28541:28618" placeholder="select * fro... AppleOther" />
-                <marker date="1515741520149" expanded="true" signature="28692:28770" placeholder="select * fro... AppleOther" />
-                <marker date="1515741520149" expanded="true" signature="29005:29068" placeholder="select * fro... AppleOther" />
-                <marker date="1515741520149" expanded="true" signature="29193:29234" placeholder="update Apple... " />
-                <marker date="1515741520149" expanded="true" signature="29307:29348" placeholder="update Apple... " />
-                <marker date="1515741520149" expanded="true" signature="29449:29512" placeholder="select * fro... AppleOther" />
-                <marker date="1515741520149" expanded="true" signature="29637:29678" placeholder="update Apple... " />
-                <marker date="1515741520149" expanded="true" signature="29751:29792" placeholder="update Apple... " />
+                <element signature="e#24#35#0" expanded="true" />
+                <marker date="1515746570685" expanded="true" signature="754:791" placeholder="select * fro... users" />
+                <marker date="1515746570685" expanded="true" signature="1537:1574" placeholder="select * fro... users" />
+                <marker date="1515746570685" expanded="true" signature="1721:1766" placeholder="update users... " />
+                <marker date="1515746570685" expanded="true" signature="2110:2155" placeholder="select * fro... MainCarousel" />
+                <marker date="1515746570685" expanded="true" signature="2414:2452" placeholder="select * fro... MainCarousel" />
+                <marker date="1515746570685" expanded="true" signature="2883:2968" placeholder="update MainC... " />
+                <marker date="1515746570685" expanded="true" signature="3229:3273" placeholder="update MainC... " />
+                <marker date="1515746570685" expanded="true" signature="3483:3521" placeholder="select * fro... MainCarousel" />
+                <marker date="1515746570685" expanded="true" signature="3727:3767" placeholder="select * fro... MainCarousel" />
+                <marker date="1515746570685" expanded="true" signature="3832:3875" placeholder="update MainC... " />
+                <marker date="1515746570685" expanded="true" signature="3951:3994" placeholder="update MainC... " />
+                <marker date="1515746570685" expanded="true" signature="4090:4130" placeholder="select * fro... MainCarousel" />
+                <marker date="1515746570685" expanded="true" signature="4195:4238" placeholder="update MainC... " />
+                <marker date="1515746570685" expanded="true" signature="4314:4357" placeholder="update MainC... " />
+                <marker date="1515746570685" expanded="true" signature="4571:4614" placeholder="select * fro... MainEntrance" />
+                <marker date="1515746570685" expanded="true" signature="4870:4909" placeholder="select * fro... MainEntrance" />
+                <marker date="1515746570685" expanded="true" signature="5450:5566" placeholder="update MainE... " />
+                <marker date="1515746570685" expanded="true" signature="5999:6059" placeholder="select * fro... MainNews" />
+                <marker date="1515746570685" expanded="true" signature="6366:6400" placeholder="select * fro... MainNews" />
+                <marker date="1515746570685" expanded="true" signature="6939:6973" placeholder="select * fro... MainNews" />
+                <marker date="1515746570685" expanded="true" signature="7018:7099" placeholder="update MainN... " />
+                <marker date="1515746570685" expanded="true" signature="7206:7331" placeholder="insert into MainNews... " />
+                <marker date="1515746570685" expanded="true" signature="7647:7687" placeholder="update MainN... " />
+                <marker date="1515746570685" expanded="true" signature="7931:7965" placeholder="select * fro... MainNews" />
+                <marker date="1515746570685" expanded="true" signature="8324:8358" placeholder="select * fro... MainNews" />
+                <marker date="1515746570685" expanded="true" signature="8434:8479" placeholder="update MainN... " />
+                <marker date="1515746570685" expanded="true" signature="8522:8567" placeholder="update MainN... " />
+                <marker date="1515746570685" expanded="true" signature="8883:8930" placeholder="select * fro... designCarousel" />
+                <marker date="1515746570685" expanded="true" signature="9193:9233" placeholder="select * fro... designCarousel" />
+                <marker date="1515746570685" expanded="true" signature="9638:9725" placeholder="update desig... " />
+                <marker date="1515746570685" expanded="true" signature="10002:10048" placeholder="update desig... " />
+                <marker date="1515746570685" expanded="true" signature="10262:10302" placeholder="select * fro... designCarousel" />
+                <marker date="1515746570685" expanded="true" signature="10508:10550" placeholder="select * fro... designCarousel" />
+                <marker date="1515746570685" expanded="true" signature="10615:10660" placeholder="update desig... " />
+                <marker date="1515746570685" expanded="true" signature="10736:10781" placeholder="update desig... " />
+                <marker date="1515746570685" expanded="true" signature="10877:10919" placeholder="select * fro... designCarousel" />
+                <marker date="1515746570685" expanded="true" signature="10984:11029" placeholder="update desig... " />
+                <marker date="1515746570685" expanded="true" signature="11105:11150" placeholder="update desig... " />
+                <marker date="1515746570685" expanded="true" signature="11530:11592" placeholder="select * fro... designNews" />
+                <marker date="1515746570685" expanded="true" signature="11903:11939" placeholder="select * fro... designNews" />
+                <marker date="1515746570685" expanded="true" signature="12480:12516" placeholder="select * fro... designNews" />
+                <marker date="1515746570685" expanded="true" signature="12561:12644" placeholder="update desig... " />
+                <marker date="1515746570685" expanded="true" signature="12751:12878" placeholder="insert into designNews... " />
+                <marker date="1515746570685" expanded="true" signature="13198:13240" placeholder="update desig... " />
+                <marker date="1515746570685" expanded="true" signature="13488:13524" placeholder="select * fro... designNews" />
+                <marker date="1515746570685" expanded="true" signature="13887:13923" placeholder="select * fro... designNews" />
+                <marker date="1515746570685" expanded="true" signature="13999:14046" placeholder="update desig... " />
+                <marker date="1515746570685" expanded="true" signature="14089:14136" placeholder="update desig... " />
+                <marker date="1515746570685" expanded="true" signature="14623:14688" placeholder="select * fro... DesignProject" />
+                <marker date="1515746570685" expanded="true" signature="15017:15056" placeholder="select * fro... DesignProject" />
+                <marker date="1515746570685" expanded="true" signature="15742:15781" placeholder="select * fro... DesignProject" />
+                <marker date="1515746570685" expanded="true" signature="15829:15924" placeholder="update Desig... " />
+                <marker date="1515746570685" expanded="true" signature="16038:16168" placeholder="insert into DesignProject... " />
+                <marker date="1515746570685" expanded="true" signature="16494:16539" placeholder="update Desig... " />
+                <marker date="1515746570685" expanded="true" signature="16796:16835" placeholder="select * fro... designproject" />
+                <marker date="1515746570685" expanded="true" signature="17216:17255" placeholder="select * fro... designproject" />
+                <marker date="1515746570685" expanded="true" signature="17334:17384" placeholder="update desig... " />
+                <marker date="1515746570685" expanded="true" signature="17427:17477" placeholder="update desig... " />
+                <marker date="1515746570685" expanded="true" signature="17811:17850" placeholder="select * fro... designproject" />
+                <marker date="1515746570685" expanded="true" signature="18412:18451" placeholder="select * fro... designproject" />
+                <marker date="1515746570685" expanded="true" signature="18564:18612" placeholder="update desig... " />
+                <marker date="1515746570685" expanded="true" signature="19093:19151" placeholder="select * fro... Events" />
+                <marker date="1515746570685" expanded="true" signature="19460:19492" placeholder="select * fro... Events" />
+                <marker date="1515746570685" expanded="true" signature="19966:19998" placeholder="select * fro... Events" />
+                <marker date="1515746570685" expanded="true" signature="20045:20111" placeholder="update Event... " />
+                <marker date="1515746570685" expanded="true" signature="20207:20321" placeholder="insert into Events... " />
+                <marker date="1515746570685" expanded="true" signature="20589:20627" placeholder="update Event... " />
+                <marker date="1515746570685" expanded="true" signature="20867:20899" placeholder="select * fro... Events" />
+                <marker date="1515746570685" expanded="true" signature="21258:21290" placeholder="select * fro... Events" />
+                <marker date="1515746570685" expanded="true" signature="21366:21409" placeholder="update Event... " />
+                <marker date="1515746570685" expanded="true" signature="21452:21495" placeholder="update Event... " />
+                <marker date="1515746570685" expanded="true" signature="22013:22081" placeholder="select * fro... eventmember" />
+                <marker date="1515746570685" expanded="true" signature="22474:22533" placeholder="select * fro... Contact" />
+                <marker date="1515746570685" expanded="true" signature="22801:22822" placeholder="select * fro... HotWord" />
+                <marker date="1515746570685" expanded="true" signature="23065:23098" placeholder="select * fro... HotWord" />
+                <marker date="1515746570685" expanded="true" signature="23506:23539" placeholder="select * fro... HotWord" />
+                <marker date="1515746570685" expanded="true" signature="23587:23641" placeholder="update HotWo... " />
+                <marker date="1515746570685" expanded="true" signature="23726:23787" placeholder="insert into HotWord... " />
+                <marker date="1515746570685" expanded="true" signature="24077:24116" placeholder="update HotWo... " />
+                <marker date="1515746570685" expanded="true" signature="24302:24370" placeholder="select * fro... AppleOther" />
+                <marker date="1515746570685" expanded="true" signature="24567:24635" placeholder="select * fro... AppleOther" />
+                <marker date="1515746570685" expanded="true" signature="24834:24902" placeholder="select * fro... AppleOther" />
+                <marker date="1515746570685" expanded="true" signature="25099:25167" placeholder="select * fro... AppleOther" />
+                <marker date="1515746570685" expanded="true" signature="25366:25434" placeholder="select * fro... AppleOther" />
+                <marker date="1515746570685" expanded="true" signature="25724:25760" placeholder="select * fro... AppleOther" />
+                <marker date="1515746570685" expanded="true" signature="26837:26873" placeholder="select * fro... AppleOther" />
+                <marker date="1515746570685" expanded="true" signature="26919:27048" placeholder="update Apple... " />
+                <marker date="1515746570685" expanded="true" signature="27248:27300" placeholder="select count... AppleOther" />
+                <marker date="1515746570685" expanded="true" signature="27370:27515" placeholder="insert into AppleOther... " />
+                <marker date="1515746570685" expanded="true" signature="27987:28029" placeholder="update Apple... " />
+                <marker date="1515746570685" expanded="true" signature="28085:28121" placeholder="select * fro... AppleOther" />
+                <marker date="1515746570685" expanded="true" signature="28438:28474" placeholder="select * fro... AppleOther" />
+                <marker date="1515746570685" expanded="true" signature="28541:28618" placeholder="select * fro... AppleOther" />
+                <marker date="1515746570685" expanded="true" signature="28692:28770" placeholder="select * fro... AppleOther" />
+                <marker date="1515746570685" expanded="true" signature="29005:29068" placeholder="select * fro... AppleOther" />
+                <marker date="1515746570685" expanded="true" signature="29193:29234" placeholder="update Apple... " />
+                <marker date="1515746570685" expanded="true" signature="29307:29348" placeholder="update Apple... " />
+                <marker date="1515746570685" expanded="true" signature="29449:29512" placeholder="select * fro... AppleOther" />
+                <marker date="1515746570685" expanded="true" signature="29637:29678" placeholder="update Apple... " />
+                <marker date="1515746570685" expanded="true" signature="29751:29792" placeholder="update Apple... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/design/base.html">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/v2.0/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4050633">
-              <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
+            <state vertical-scroll-proportion="0.43382353">
+              <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/home/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.0">
+              <caret line="36" column="84" selection-start-line="36" selection-start-column="84" selection-end-line="36" selection-end-column="84" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="event.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/home/event.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/home/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-53.0">
+              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="116" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/design/contact.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="12.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/design/project.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="51.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/design/about1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="15.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/design/css/common.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="82" column="21" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/search.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.0">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -194,6 +247,10 @@
         <option value="$PROJECT_DIR$/app/modules/img.py" />
         <option value="$PROJECT_DIR$/app/modules/manage.py" />
         <option value="$PROJECT_DIR$/templates/design/base.html" />
+        <option value="$PROJECT_DIR$/static/design/css/common.css" />
+        <option value="$PROJECT_DIR$/static/css/search.css" />
+        <option value="$PROJECT_DIR$/templates/home/index.html" />
+        <option value="$PROJECT_DIR$/static/v2.0/css/style.css" />
       </list>
     </option>
   </component>
@@ -203,9 +260,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="878" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -232,7 +290,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -279,7 +336,137 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="godolphinTo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="godolphinTo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="godolphinTo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="godolphinTo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="godolphinTo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="godolphinTo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="godolphinTo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="godolphinTo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v2.0" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="godolphinTo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="godolphinTo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="godolphinTo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="godolphinTo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="design" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="godolphinTo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="godolphinTo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -317,14 +504,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/project/NextCar3.0" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="E:\nodejs\node.exe" />
   </component>
   <component name="RunManager" selected="Python.app">
     <configuration default="false" name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -333,15 +522,15 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="D:\Python27\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="godolphinTo" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
-      <option name="PARAMETERS" value="-port=8001 -dev=False -config=$USER_HOME$/gdf_ini/gdf_dev.ini -log_file_prefix=$USER_HOME$/gdf_ini/8001.log" />
+      <option name="PARAMETERS" value="-port=8001 -dev=False -config=E:/gdf_img/gdf_dev.ini -log_file_prefix=E:/gdf_img/8001.log" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -415,6 +604,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -556,26 +750,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="878" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3390558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25292864" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32951653" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26391983" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -595,10 +789,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/Cellar/python/2.7.10_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ConfigParser.py">
+    <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33266532">
-          <caret line="606" column="0" selection-start-line="606" selection-start-column="0" selection-end-line="606" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="54" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -607,15 +801,141 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/img.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="520" column="25" selection-start-line="520" selection-start-column="25" selection-end-line="520" selection-end-column="25" />
           <folding>
-            <marker date="1515741520151" expanded="true" signature="450:537" placeholder="insert into eventmember... " />
-            <marker date="1515741520151" expanded="true" signature="1111:1205" placeholder="insert into contact... " />
-            <marker date="1515741520151" expanded="true" signature="1665:1757" placeholder="select * fro... DesignProject" />
-            <marker date="1515741520151" expanded="true" signature="2170:2259" placeholder="select * fro... DesignNews" />
-            <marker date="1515741520151" expanded="true" signature="2910:3002" placeholder="select * fro... DesignProject" />
-            <marker date="1515741520151" expanded="true" signature="3415:3504" placeholder="select * fro... DesignNews" />
-            <marker date="1515741520151" expanded="true" signature="3895:3980" placeholder="select * fro... Events" />
+            <element signature="e#24#35#0" expanded="true" />
+            <marker date="1515746570685" expanded="true" signature="754:791" placeholder="select * fro... users" />
+            <marker date="1515746570685" expanded="true" signature="1537:1574" placeholder="select * fro... users" />
+            <marker date="1515746570685" expanded="true" signature="1721:1766" placeholder="update users... " />
+            <marker date="1515746570685" expanded="true" signature="2110:2155" placeholder="select * fro... MainCarousel" />
+            <marker date="1515746570685" expanded="true" signature="2414:2452" placeholder="select * fro... MainCarousel" />
+            <marker date="1515746570685" expanded="true" signature="2883:2968" placeholder="update MainC... " />
+            <marker date="1515746570685" expanded="true" signature="3229:3273" placeholder="update MainC... " />
+            <marker date="1515746570685" expanded="true" signature="3483:3521" placeholder="select * fro... MainCarousel" />
+            <marker date="1515746570685" expanded="true" signature="3727:3767" placeholder="select * fro... MainCarousel" />
+            <marker date="1515746570685" expanded="true" signature="3832:3875" placeholder="update MainC... " />
+            <marker date="1515746570685" expanded="true" signature="3951:3994" placeholder="update MainC... " />
+            <marker date="1515746570685" expanded="true" signature="4090:4130" placeholder="select * fro... MainCarousel" />
+            <marker date="1515746570685" expanded="true" signature="4195:4238" placeholder="update MainC... " />
+            <marker date="1515746570685" expanded="true" signature="4314:4357" placeholder="update MainC... " />
+            <marker date="1515746570685" expanded="true" signature="4571:4614" placeholder="select * fro... MainEntrance" />
+            <marker date="1515746570685" expanded="true" signature="4870:4909" placeholder="select * fro... MainEntrance" />
+            <marker date="1515746570685" expanded="true" signature="5450:5566" placeholder="update MainE... " />
+            <marker date="1515746570685" expanded="true" signature="5999:6059" placeholder="select * fro... MainNews" />
+            <marker date="1515746570685" expanded="true" signature="6366:6400" placeholder="select * fro... MainNews" />
+            <marker date="1515746570685" expanded="true" signature="6939:6973" placeholder="select * fro... MainNews" />
+            <marker date="1515746570685" expanded="true" signature="7018:7099" placeholder="update MainN... " />
+            <marker date="1515746570685" expanded="true" signature="7206:7331" placeholder="insert into MainNews... " />
+            <marker date="1515746570685" expanded="true" signature="7647:7687" placeholder="update MainN... " />
+            <marker date="1515746570685" expanded="true" signature="7931:7965" placeholder="select * fro... MainNews" />
+            <marker date="1515746570685" expanded="true" signature="8324:8358" placeholder="select * fro... MainNews" />
+            <marker date="1515746570685" expanded="true" signature="8434:8479" placeholder="update MainN... " />
+            <marker date="1515746570685" expanded="true" signature="8522:8567" placeholder="update MainN... " />
+            <marker date="1515746570685" expanded="true" signature="8883:8930" placeholder="select * fro... designCarousel" />
+            <marker date="1515746570685" expanded="true" signature="9193:9233" placeholder="select * fro... designCarousel" />
+            <marker date="1515746570685" expanded="true" signature="9638:9725" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="10002:10048" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="10262:10302" placeholder="select * fro... designCarousel" />
+            <marker date="1515746570685" expanded="true" signature="10508:10550" placeholder="select * fro... designCarousel" />
+            <marker date="1515746570685" expanded="true" signature="10615:10660" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="10736:10781" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="10877:10919" placeholder="select * fro... designCarousel" />
+            <marker date="1515746570685" expanded="true" signature="10984:11029" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="11105:11150" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="11530:11592" placeholder="select * fro... designNews" />
+            <marker date="1515746570685" expanded="true" signature="11903:11939" placeholder="select * fro... designNews" />
+            <marker date="1515746570685" expanded="true" signature="12480:12516" placeholder="select * fro... designNews" />
+            <marker date="1515746570685" expanded="true" signature="12561:12644" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="12751:12878" placeholder="insert into designNews... " />
+            <marker date="1515746570685" expanded="true" signature="13198:13240" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="13488:13524" placeholder="select * fro... designNews" />
+            <marker date="1515746570685" expanded="true" signature="13887:13923" placeholder="select * fro... designNews" />
+            <marker date="1515746570685" expanded="true" signature="13999:14046" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="14089:14136" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="14623:14688" placeholder="select * fro... DesignProject" />
+            <marker date="1515746570685" expanded="true" signature="15017:15056" placeholder="select * fro... DesignProject" />
+            <marker date="1515746570685" expanded="true" signature="15742:15781" placeholder="select * fro... DesignProject" />
+            <marker date="1515746570685" expanded="true" signature="15829:15924" placeholder="update Desig... " />
+            <marker date="1515746570685" expanded="true" signature="16038:16168" placeholder="insert into DesignProject... " />
+            <marker date="1515746570685" expanded="true" signature="16494:16539" placeholder="update Desig... " />
+            <marker date="1515746570685" expanded="true" signature="16796:16835" placeholder="select * fro... designproject" />
+            <marker date="1515746570685" expanded="true" signature="17216:17255" placeholder="select * fro... designproject" />
+            <marker date="1515746570685" expanded="true" signature="17334:17384" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="17427:17477" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="17811:17850" placeholder="select * fro... designproject" />
+            <marker date="1515746570685" expanded="true" signature="18412:18451" placeholder="select * fro... designproject" />
+            <marker date="1515746570685" expanded="true" signature="18564:18612" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="19093:19151" placeholder="select * fro... Events" />
+            <marker date="1515746570685" expanded="true" signature="19460:19492" placeholder="select * fro... Events" />
+            <marker date="1515746570685" expanded="true" signature="19966:19998" placeholder="select * fro... Events" />
+            <marker date="1515746570685" expanded="true" signature="20045:20111" placeholder="update Event... " />
+            <marker date="1515746570685" expanded="true" signature="20207:20321" placeholder="insert into Events... " />
+            <marker date="1515746570685" expanded="true" signature="20589:20627" placeholder="update Event... " />
+            <marker date="1515746570685" expanded="true" signature="20867:20899" placeholder="select * fro... Events" />
+            <marker date="1515746570685" expanded="true" signature="21258:21290" placeholder="select * fro... Events" />
+            <marker date="1515746570685" expanded="true" signature="21366:21409" placeholder="update Event... " />
+            <marker date="1515746570685" expanded="true" signature="21452:21495" placeholder="update Event... " />
+            <marker date="1515746570685" expanded="true" signature="22013:22081" placeholder="select * fro... eventmember" />
+            <marker date="1515746570685" expanded="true" signature="22474:22533" placeholder="select * fro... Contact" />
+            <marker date="1515746570685" expanded="true" signature="22801:22822" placeholder="select * fro... HotWord" />
+            <marker date="1515746570685" expanded="true" signature="23065:23098" placeholder="select * fro... HotWord" />
+            <marker date="1515746570685" expanded="true" signature="23506:23539" placeholder="select * fro... HotWord" />
+            <marker date="1515746570685" expanded="true" signature="23587:23641" placeholder="update HotWo... " />
+            <marker date="1515746570685" expanded="true" signature="23726:23787" placeholder="insert into HotWord... " />
+            <marker date="1515746570685" expanded="true" signature="24077:24116" placeholder="update HotWo... " />
+            <marker date="1515746570685" expanded="true" signature="24302:24370" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="24567:24635" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="24834:24902" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="25099:25167" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="25366:25434" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="25724:25760" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="26837:26873" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="26919:27048" placeholder="update Apple... " />
+            <marker date="1515746570685" expanded="true" signature="27248:27300" placeholder="select count... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="27370:27515" placeholder="insert into AppleOther... " />
+            <marker date="1515746570685" expanded="true" signature="27987:28029" placeholder="update Apple... " />
+            <marker date="1515746570685" expanded="true" signature="28085:28121" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="28438:28474" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="28541:28618" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="28692:28770" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="29005:29068" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="29193:29234" placeholder="update Apple... " />
+            <marker date="1515746570685" expanded="true" signature="29307:29348" placeholder="update Apple... " />
+            <marker date="1515746570685" expanded="true" signature="29449:29512" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="29637:29678" placeholder="update Apple... " />
+            <marker date="1515746570685" expanded="true" signature="29751:29792" placeholder="update Apple... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/design/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/api/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -635,119 +955,194 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/design/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.928572">
+          <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="520" column="25" selection-start-line="520" selection-start-column="25" selection-end-line="520" selection-end-column="25" />
+        <state vertical-scroll-proportion="-7.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
-            <marker date="1515741520149" expanded="true" signature="754:791" placeholder="select * fro... users" />
-            <marker date="1515741520149" expanded="true" signature="1537:1574" placeholder="select * fro... users" />
-            <marker date="1515741520149" expanded="true" signature="1721:1766" placeholder="update users... " />
-            <marker date="1515741520149" expanded="true" signature="2110:2155" placeholder="select * fro... MainCarousel" />
-            <marker date="1515741520149" expanded="true" signature="2414:2452" placeholder="select * fro... MainCarousel" />
-            <marker date="1515741520149" expanded="true" signature="2883:2968" placeholder="update MainC... " />
-            <marker date="1515741520149" expanded="true" signature="3229:3273" placeholder="update MainC... " />
-            <marker date="1515741520149" expanded="true" signature="3483:3521" placeholder="select * fro... MainCarousel" />
-            <marker date="1515741520149" expanded="true" signature="3727:3767" placeholder="select * fro... MainCarousel" />
-            <marker date="1515741520149" expanded="true" signature="3832:3875" placeholder="update MainC... " />
-            <marker date="1515741520149" expanded="true" signature="3951:3994" placeholder="update MainC... " />
-            <marker date="1515741520149" expanded="true" signature="4090:4130" placeholder="select * fro... MainCarousel" />
-            <marker date="1515741520149" expanded="true" signature="4195:4238" placeholder="update MainC... " />
-            <marker date="1515741520149" expanded="true" signature="4314:4357" placeholder="update MainC... " />
-            <marker date="1515741520149" expanded="true" signature="4571:4614" placeholder="select * fro... MainEntrance" />
-            <marker date="1515741520149" expanded="true" signature="4870:4909" placeholder="select * fro... MainEntrance" />
-            <marker date="1515741520149" expanded="true" signature="5450:5566" placeholder="update MainE... " />
-            <marker date="1515741520149" expanded="true" signature="5999:6059" placeholder="select * fro... MainNews" />
-            <marker date="1515741520149" expanded="true" signature="6366:6400" placeholder="select * fro... MainNews" />
-            <marker date="1515741520149" expanded="true" signature="6939:6973" placeholder="select * fro... MainNews" />
-            <marker date="1515741520149" expanded="true" signature="7018:7099" placeholder="update MainN... " />
-            <marker date="1515741520149" expanded="true" signature="7206:7331" placeholder="insert into MainNews... " />
-            <marker date="1515741520149" expanded="true" signature="7647:7687" placeholder="update MainN... " />
-            <marker date="1515741520149" expanded="true" signature="7931:7965" placeholder="select * fro... MainNews" />
-            <marker date="1515741520149" expanded="true" signature="8324:8358" placeholder="select * fro... MainNews" />
-            <marker date="1515741520149" expanded="true" signature="8434:8479" placeholder="update MainN... " />
-            <marker date="1515741520149" expanded="true" signature="8522:8567" placeholder="update MainN... " />
-            <marker date="1515741520149" expanded="true" signature="8883:8930" placeholder="select * fro... designCarousel" />
-            <marker date="1515741520149" expanded="true" signature="9193:9233" placeholder="select * fro... designCarousel" />
-            <marker date="1515741520149" expanded="true" signature="9638:9725" placeholder="update desig... " />
-            <marker date="1515741520149" expanded="true" signature="10002:10048" placeholder="update desig... " />
-            <marker date="1515741520149" expanded="true" signature="10262:10302" placeholder="select * fro... designCarousel" />
-            <marker date="1515741520149" expanded="true" signature="10508:10550" placeholder="select * fro... designCarousel" />
-            <marker date="1515741520149" expanded="true" signature="10615:10660" placeholder="update desig... " />
-            <marker date="1515741520149" expanded="true" signature="10736:10781" placeholder="update desig... " />
-            <marker date="1515741520149" expanded="true" signature="10877:10919" placeholder="select * fro... designCarousel" />
-            <marker date="1515741520149" expanded="true" signature="10984:11029" placeholder="update desig... " />
-            <marker date="1515741520149" expanded="true" signature="11105:11150" placeholder="update desig... " />
-            <marker date="1515741520149" expanded="true" signature="11530:11592" placeholder="select * fro... designNews" />
-            <marker date="1515741520149" expanded="true" signature="11903:11939" placeholder="select * fro... designNews" />
-            <marker date="1515741520149" expanded="true" signature="12480:12516" placeholder="select * fro... designNews" />
-            <marker date="1515741520149" expanded="true" signature="12561:12644" placeholder="update desig... " />
-            <marker date="1515741520149" expanded="true" signature="12751:12878" placeholder="insert into designNews... " />
-            <marker date="1515741520149" expanded="true" signature="13198:13240" placeholder="update desig... " />
-            <marker date="1515741520149" expanded="true" signature="13488:13524" placeholder="select * fro... designNews" />
-            <marker date="1515741520149" expanded="true" signature="13887:13923" placeholder="select * fro... designNews" />
-            <marker date="1515741520149" expanded="true" signature="13999:14046" placeholder="update desig... " />
-            <marker date="1515741520149" expanded="true" signature="14089:14136" placeholder="update desig... " />
-            <marker date="1515741520149" expanded="true" signature="14623:14688" placeholder="select * fro... DesignProject" />
-            <marker date="1515741520149" expanded="true" signature="15017:15056" placeholder="select * fro... DesignProject" />
-            <marker date="1515741520149" expanded="true" signature="15742:15781" placeholder="select * fro... DesignProject" />
-            <marker date="1515741520149" expanded="true" signature="15829:15924" placeholder="update Desig... " />
-            <marker date="1515741520149" expanded="true" signature="16038:16168" placeholder="insert into DesignProject... " />
-            <marker date="1515741520149" expanded="true" signature="16494:16539" placeholder="update Desig... " />
-            <marker date="1515741520149" expanded="true" signature="16796:16835" placeholder="select * fro... designproject" />
-            <marker date="1515741520149" expanded="true" signature="17216:17255" placeholder="select * fro... designproject" />
-            <marker date="1515741520149" expanded="true" signature="17334:17384" placeholder="update desig... " />
-            <marker date="1515741520149" expanded="true" signature="17427:17477" placeholder="update desig... " />
-            <marker date="1515741520149" expanded="true" signature="17811:17850" placeholder="select * fro... designproject" />
-            <marker date="1515741520149" expanded="true" signature="18412:18451" placeholder="select * fro... designproject" />
-            <marker date="1515741520149" expanded="true" signature="18564:18612" placeholder="update desig... " />
-            <marker date="1515741520149" expanded="true" signature="19093:19151" placeholder="select * fro... Events" />
-            <marker date="1515741520149" expanded="true" signature="19460:19492" placeholder="select * fro... Events" />
-            <marker date="1515741520149" expanded="true" signature="19966:19998" placeholder="select * fro... Events" />
-            <marker date="1515741520149" expanded="true" signature="20045:20111" placeholder="update Event... " />
-            <marker date="1515741520149" expanded="true" signature="20207:20321" placeholder="insert into Events... " />
-            <marker date="1515741520149" expanded="true" signature="20589:20627" placeholder="update Event... " />
-            <marker date="1515741520149" expanded="true" signature="20867:20899" placeholder="select * fro... Events" />
-            <marker date="1515741520149" expanded="true" signature="21258:21290" placeholder="select * fro... Events" />
-            <marker date="1515741520149" expanded="true" signature="21366:21409" placeholder="update Event... " />
-            <marker date="1515741520149" expanded="true" signature="21452:21495" placeholder="update Event... " />
-            <marker date="1515741520149" expanded="true" signature="22013:22081" placeholder="select * fro... eventmember" />
-            <marker date="1515741520149" expanded="true" signature="22474:22533" placeholder="select * fro... Contact" />
-            <marker date="1515741520149" expanded="true" signature="22801:22822" placeholder="select * fro... HotWord" />
-            <marker date="1515741520149" expanded="true" signature="23065:23098" placeholder="select * fro... HotWord" />
-            <marker date="1515741520149" expanded="true" signature="23506:23539" placeholder="select * fro... HotWord" />
-            <marker date="1515741520149" expanded="true" signature="23587:23641" placeholder="update HotWo... " />
-            <marker date="1515741520149" expanded="true" signature="23726:23787" placeholder="insert into HotWord... " />
-            <marker date="1515741520149" expanded="true" signature="24077:24116" placeholder="update HotWo... " />
-            <marker date="1515741520149" expanded="true" signature="24302:24370" placeholder="select * fro... AppleOther" />
-            <marker date="1515741520149" expanded="true" signature="24567:24635" placeholder="select * fro... AppleOther" />
-            <marker date="1515741520149" expanded="true" signature="24834:24902" placeholder="select * fro... AppleOther" />
-            <marker date="1515741520149" expanded="true" signature="25099:25167" placeholder="select * fro... AppleOther" />
-            <marker date="1515741520149" expanded="true" signature="25366:25434" placeholder="select * fro... AppleOther" />
-            <marker date="1515741520149" expanded="true" signature="25724:25760" placeholder="select * fro... AppleOther" />
-            <marker date="1515741520149" expanded="true" signature="26837:26873" placeholder="select * fro... AppleOther" />
-            <marker date="1515741520149" expanded="true" signature="26919:27048" placeholder="update Apple... " />
-            <marker date="1515741520149" expanded="true" signature="27248:27300" placeholder="select count... AppleOther" />
-            <marker date="1515741520149" expanded="true" signature="27370:27515" placeholder="insert into AppleOther... " />
-            <marker date="1515741520149" expanded="true" signature="27987:28029" placeholder="update Apple... " />
-            <marker date="1515741520149" expanded="true" signature="28085:28121" placeholder="select * fro... AppleOther" />
-            <marker date="1515741520149" expanded="true" signature="28438:28474" placeholder="select * fro... AppleOther" />
-            <marker date="1515741520149" expanded="true" signature="28541:28618" placeholder="select * fro... AppleOther" />
-            <marker date="1515741520149" expanded="true" signature="28692:28770" placeholder="select * fro... AppleOther" />
-            <marker date="1515741520149" expanded="true" signature="29005:29068" placeholder="select * fro... AppleOther" />
-            <marker date="1515741520149" expanded="true" signature="29193:29234" placeholder="update Apple... " />
-            <marker date="1515741520149" expanded="true" signature="29307:29348" placeholder="update Apple... " />
-            <marker date="1515741520149" expanded="true" signature="29449:29512" placeholder="select * fro... AppleOther" />
-            <marker date="1515741520149" expanded="true" signature="29637:29678" placeholder="update Apple... " />
-            <marker date="1515741520149" expanded="true" signature="29751:29792" placeholder="update Apple... " />
+            <element signature="e#24#35#0" expanded="true" />
+            <marker date="1515746570685" expanded="true" signature="754:791" placeholder="select * fro... users" />
+            <marker date="1515746570685" expanded="true" signature="1537:1574" placeholder="select * fro... users" />
+            <marker date="1515746570685" expanded="true" signature="1721:1766" placeholder="update users... " />
+            <marker date="1515746570685" expanded="true" signature="2110:2155" placeholder="select * fro... MainCarousel" />
+            <marker date="1515746570685" expanded="true" signature="2414:2452" placeholder="select * fro... MainCarousel" />
+            <marker date="1515746570685" expanded="true" signature="2883:2968" placeholder="update MainC... " />
+            <marker date="1515746570685" expanded="true" signature="3229:3273" placeholder="update MainC... " />
+            <marker date="1515746570685" expanded="true" signature="3483:3521" placeholder="select * fro... MainCarousel" />
+            <marker date="1515746570685" expanded="true" signature="3727:3767" placeholder="select * fro... MainCarousel" />
+            <marker date="1515746570685" expanded="true" signature="3832:3875" placeholder="update MainC... " />
+            <marker date="1515746570685" expanded="true" signature="3951:3994" placeholder="update MainC... " />
+            <marker date="1515746570685" expanded="true" signature="4090:4130" placeholder="select * fro... MainCarousel" />
+            <marker date="1515746570685" expanded="true" signature="4195:4238" placeholder="update MainC... " />
+            <marker date="1515746570685" expanded="true" signature="4314:4357" placeholder="update MainC... " />
+            <marker date="1515746570685" expanded="true" signature="4571:4614" placeholder="select * fro... MainEntrance" />
+            <marker date="1515746570685" expanded="true" signature="4870:4909" placeholder="select * fro... MainEntrance" />
+            <marker date="1515746570685" expanded="true" signature="5450:5566" placeholder="update MainE... " />
+            <marker date="1515746570685" expanded="true" signature="5999:6059" placeholder="select * fro... MainNews" />
+            <marker date="1515746570685" expanded="true" signature="6366:6400" placeholder="select * fro... MainNews" />
+            <marker date="1515746570685" expanded="true" signature="6939:6973" placeholder="select * fro... MainNews" />
+            <marker date="1515746570685" expanded="true" signature="7018:7099" placeholder="update MainN... " />
+            <marker date="1515746570685" expanded="true" signature="7206:7331" placeholder="insert into MainNews... " />
+            <marker date="1515746570685" expanded="true" signature="7647:7687" placeholder="update MainN... " />
+            <marker date="1515746570685" expanded="true" signature="7931:7965" placeholder="select * fro... MainNews" />
+            <marker date="1515746570685" expanded="true" signature="8324:8358" placeholder="select * fro... MainNews" />
+            <marker date="1515746570685" expanded="true" signature="8434:8479" placeholder="update MainN... " />
+            <marker date="1515746570685" expanded="true" signature="8522:8567" placeholder="update MainN... " />
+            <marker date="1515746570685" expanded="true" signature="8883:8930" placeholder="select * fro... designCarousel" />
+            <marker date="1515746570685" expanded="true" signature="9193:9233" placeholder="select * fro... designCarousel" />
+            <marker date="1515746570685" expanded="true" signature="9638:9725" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="10002:10048" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="10262:10302" placeholder="select * fro... designCarousel" />
+            <marker date="1515746570685" expanded="true" signature="10508:10550" placeholder="select * fro... designCarousel" />
+            <marker date="1515746570685" expanded="true" signature="10615:10660" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="10736:10781" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="10877:10919" placeholder="select * fro... designCarousel" />
+            <marker date="1515746570685" expanded="true" signature="10984:11029" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="11105:11150" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="11530:11592" placeholder="select * fro... designNews" />
+            <marker date="1515746570685" expanded="true" signature="11903:11939" placeholder="select * fro... designNews" />
+            <marker date="1515746570685" expanded="true" signature="12480:12516" placeholder="select * fro... designNews" />
+            <marker date="1515746570685" expanded="true" signature="12561:12644" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="12751:12878" placeholder="insert into designNews... " />
+            <marker date="1515746570685" expanded="true" signature="13198:13240" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="13488:13524" placeholder="select * fro... designNews" />
+            <marker date="1515746570685" expanded="true" signature="13887:13923" placeholder="select * fro... designNews" />
+            <marker date="1515746570685" expanded="true" signature="13999:14046" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="14089:14136" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="14623:14688" placeholder="select * fro... DesignProject" />
+            <marker date="1515746570685" expanded="true" signature="15017:15056" placeholder="select * fro... DesignProject" />
+            <marker date="1515746570685" expanded="true" signature="15742:15781" placeholder="select * fro... DesignProject" />
+            <marker date="1515746570685" expanded="true" signature="15829:15924" placeholder="update Desig... " />
+            <marker date="1515746570685" expanded="true" signature="16038:16168" placeholder="insert into DesignProject... " />
+            <marker date="1515746570685" expanded="true" signature="16494:16539" placeholder="update Desig... " />
+            <marker date="1515746570685" expanded="true" signature="16796:16835" placeholder="select * fro... designproject" />
+            <marker date="1515746570685" expanded="true" signature="17216:17255" placeholder="select * fro... designproject" />
+            <marker date="1515746570685" expanded="true" signature="17334:17384" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="17427:17477" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="17811:17850" placeholder="select * fro... designproject" />
+            <marker date="1515746570685" expanded="true" signature="18412:18451" placeholder="select * fro... designproject" />
+            <marker date="1515746570685" expanded="true" signature="18564:18612" placeholder="update desig... " />
+            <marker date="1515746570685" expanded="true" signature="19093:19151" placeholder="select * fro... Events" />
+            <marker date="1515746570685" expanded="true" signature="19460:19492" placeholder="select * fro... Events" />
+            <marker date="1515746570685" expanded="true" signature="19966:19998" placeholder="select * fro... Events" />
+            <marker date="1515746570685" expanded="true" signature="20045:20111" placeholder="update Event... " />
+            <marker date="1515746570685" expanded="true" signature="20207:20321" placeholder="insert into Events... " />
+            <marker date="1515746570685" expanded="true" signature="20589:20627" placeholder="update Event... " />
+            <marker date="1515746570685" expanded="true" signature="20867:20899" placeholder="select * fro... Events" />
+            <marker date="1515746570685" expanded="true" signature="21258:21290" placeholder="select * fro... Events" />
+            <marker date="1515746570685" expanded="true" signature="21366:21409" placeholder="update Event... " />
+            <marker date="1515746570685" expanded="true" signature="21452:21495" placeholder="update Event... " />
+            <marker date="1515746570685" expanded="true" signature="22013:22081" placeholder="select * fro... eventmember" />
+            <marker date="1515746570685" expanded="true" signature="22474:22533" placeholder="select * fro... Contact" />
+            <marker date="1515746570685" expanded="true" signature="22801:22822" placeholder="select * fro... HotWord" />
+            <marker date="1515746570685" expanded="true" signature="23065:23098" placeholder="select * fro... HotWord" />
+            <marker date="1515746570685" expanded="true" signature="23506:23539" placeholder="select * fro... HotWord" />
+            <marker date="1515746570685" expanded="true" signature="23587:23641" placeholder="update HotWo... " />
+            <marker date="1515746570685" expanded="true" signature="23726:23787" placeholder="insert into HotWord... " />
+            <marker date="1515746570685" expanded="true" signature="24077:24116" placeholder="update HotWo... " />
+            <marker date="1515746570685" expanded="true" signature="24302:24370" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="24567:24635" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="24834:24902" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="25099:25167" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="25366:25434" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="25724:25760" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="26837:26873" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="26919:27048" placeholder="update Apple... " />
+            <marker date="1515746570685" expanded="true" signature="27248:27300" placeholder="select count... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="27370:27515" placeholder="insert into AppleOther... " />
+            <marker date="1515746570685" expanded="true" signature="27987:28029" placeholder="update Apple... " />
+            <marker date="1515746570685" expanded="true" signature="28085:28121" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="28438:28474" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="28541:28618" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="28692:28770" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="29005:29068" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="29193:29234" placeholder="update Apple... " />
+            <marker date="1515746570685" expanded="true" signature="29307:29348" placeholder="update Apple... " />
+            <marker date="1515746570685" expanded="true" signature="29449:29512" placeholder="select * fro... AppleOther" />
+            <marker date="1515746570685" expanded="true" signature="29637:29678" placeholder="update Apple... " />
+            <marker date="1515746570685" expanded="true" signature="29751:29792" placeholder="update Apple... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/design/base.html">
+    <entry file="file://$PROJECT_DIR$/templates/design/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4050633">
-          <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
+        <state vertical-scroll-proportion="12.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/design/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="51.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/design/about1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="15.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/design/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="82" column="21" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/search.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.0">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home/event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-53.0">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="116" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.0">
+          <caret line="36" column="84" selection-start-line="36" selection-start-column="84" selection-end-line="36" selection-end-column="84" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/v2.0/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43382353">
+          <caret line="80" column="39" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
           <folding />
         </state>
       </provider>
