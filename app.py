@@ -148,7 +148,8 @@ class Application(tornado.web.Application):
 
         self.CP = ConfigParser()
         self.CP.read(options.config)
-        print
+
+        #test
         settings = dict(
             template_path=os.path.join(os.path.dirname(__file__), "templates"),
             static_path=os.path.join(os.path.dirname(__file__), "static"),
