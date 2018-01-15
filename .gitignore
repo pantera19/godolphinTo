@@ -24,8 +24,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-
-.idea/ workspace.xml
+.idea/
 
 
 # PyInstaller
