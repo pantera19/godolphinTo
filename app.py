@@ -35,7 +35,7 @@ define("config", default="", help="config file", type=str)
 
 class Application(tornado.web.Application):
     def __init__(self):
-        # test
+       
         handlers = [
             (r"/upload", UploadHandler),
 
