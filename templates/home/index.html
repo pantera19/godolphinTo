@@ -58,7 +58,7 @@
         <div class="swiper-wrapper">
             {% for c in carousel %}
             <div class="swiper-slide"
-                 style="background:url({{ c['web_cover'] }}{{'?type=wap' if theme else ''}}) no-repeat center center;">
+                 style="background:url({{ c['web_cover'] }}{{'' if theme else '?type=wap'}}) no-repeat center center;">
             </div>
             {% end %}
         </div>
